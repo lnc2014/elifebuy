@@ -1,0 +1,45 @@
+
+*{padding:0;margin:0}
+a{color:#555;text-decoration:none;outline:none}
+a:hover{color:#3fa9f5}
+a{blr:expression(this.onFocus=this.blur())}
+ul{list-style:none}
+h4,h3,h2,h1{font-weight:normal}
+img{border:none}
+html, body{font:14px/24px "Î¢ÈíÑÅºÚ Light", "Î¢ÈíÑÅºÚ",arial,sans-serif;color:#666;min-width:1000px;background:#f2f2f2}
+#bj{ background:url("../Images/hd.html")/*tpa=http://a.weixinhui8.com/sy/Images/hd.html*/; padding:210px;}
+
+
+#service{margin-top:-300px;position:fixed; _position:absolute;right:0;top:50%;width:56px;height:400px;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;opacity: 0.9;}
+
+
+#service a{display:block;width:56px;height:89px;text-indent:-9999px;background:url("../Images/service.html")/*tpa=http://a.weixinhui8.com/sy/Images/service.html*/ no-repeat;cursor:pointer;margin-bottom:1px}
+
+#service a.mscBtn{height:50px;background:#fff url("../Images/musicbtn.gif.html")/*tpa=http://a.weixinhui8.com/sy/Images/musicbtn.gif.html*/ no-repeat}
+
+#service a.goTop{height:80px;width:56px;background-position:0 bottom}
+
+#service a.goTop:hover{background-position:-56px bottom}
+
+#service a.pause{background-position:0 bottom}
+
+#service .srvLog{ }
+
+#service .srvLog:hover{background-position:-56px 0}
+
+#service .srvCns{background-position:0 -96px}
+
+#service .srvCns:hover{background-position:-56px -96px}
+
+#service .srvDj{background-position:0 -194px}
+
+#service .srvDj:hover{background-position:-56px -194px}
+
+
+#service .dg{background-position:0 -290px}
+
+#service .dg:hover{background-position:-56px -290px}
+
+#service .jy{background-position:0 -390px}
+
+#service .jy:hover{background-position:-56px -390px}
