@@ -1,6 +1,6 @@
 <?php
 /**
- * This is the template for generating the create view for crud.
+ * This is the template for generating the create views for crud.
  * The following variables are available in this template:
  * - $ID: the primary key name
  * - $modelClass: the model class name

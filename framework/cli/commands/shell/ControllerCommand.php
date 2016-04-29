@@ -134,7 +134,7 @@ EOD;
 		foreach($actions as $name)
 		{
 			$list[$name.'.php']=array(
-				'source'=>$templatePath.DIRECTORY_SEPARATOR.'view.php',
+				'source'=>$templatePath.DIRECTORY_SEPARATOR.'views.php',
 				'target'=>$viewPath.DIRECTORY_SEPARATOR.$name.'.php',
 				'callback'=>array($this,'generateAction'),
 				'params'=>array('controller'=>$controllerClass, 'action'=>$name),

@@ -40,15 +40,15 @@
  * @property CAssetManager $assetManager The asset manager component.
  * @property CHttpSession $session The session component.
  * @property CWebUser $user The user session information.
- * @property IViewRenderer $viewRenderer The view renderer.
+ * @property IViewRenderer $viewRenderer The views renderer.
  * @property CClientScript $clientScript The client script manager.
  * @property IWidgetFactory $widgetFactory The widget factory.
  * @property CThemeManager $themeManager The theme manager.
  * @property CTheme $theme The theme used currently. Null if no theme is being used.
  * @property CController $controller The currently active controller.
  * @property string $controllerPath The directory that contains the controller classes. Defaults to 'protected/controllers'.
- * @property string $viewPath The root directory of view files. Defaults to 'protected/views'.
- * @property string $systemViewPath The root directory of system view files. Defaults to 'protected/views/system'.
+ * @property string $viewPath The root directory of views files. Defaults to 'protected/views'.
+ * @property string $systemViewPath The root directory of system views files. Defaults to 'protected/views/system'.
  * @property string $layoutPath The root directory of layout files. Defaults to 'protected/views/layouts'.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -210,11 +210,11 @@ class CWebApplication extends CApplication
 	}
 
 	/**
-	 * Returns the view renderer.
+	 * Returns the views renderer.
 	 * If this component is registered and enabled, the default
-	 * view rendering logic defined in {@link CBaseController} will
+	 * views rendering logic defined in {@link CBaseController} will
 	 * be replaced by this renderer.
-	 * @return IViewRenderer the view renderer.
+	 * @return IViewRenderer the views renderer.
 	 */
 	public function getViewRenderer()
 	{
@@ -424,7 +424,7 @@ class CWebApplication extends CApplication
 	}
 
 	/**
-	 * @return string the root directory of view files. Defaults to 'protected/views'.
+	 * @return string the root directory of views files. Defaults to 'protected/views'.
 	 */
 	public function getViewPath()
 	{
@@ -435,18 +435,18 @@ class CWebApplication extends CApplication
 	}
 
 	/**
-	 * @param string $path the root directory of view files.
+	 * @param string $path the root directory of views files.
 	 * @throws CException if the directory does not exist.
 	 */
 	public function setViewPath($path)
 	{
 		if(($this->_viewPath=realpath($path))===false || !is_dir($this->_viewPath))
-			throw new CException(Yii::t('yii','The view path "{path}" is not a valid directory.',
+			throw new CException(Yii::t('yii','The views path "{path}" is not a valid directory.',
 				array('{path}'=>$path)));
 	}
 
 	/**
-	 * @return string the root directory of system view files. Defaults to 'protected/views/system'.
+	 * @return string the root directory of system views files. Defaults to 'protected/views/system'.
 	 */
 	public function getSystemViewPath()
 	{
@@ -457,13 +457,13 @@ class CWebApplication extends CApplication
 	}
 
 	/**
-	 * @param string $path the root directory of system view files.
+	 * @param string $path the root directory of system views files.
 	 * @throws CException if the directory does not exist.
 	 */
 	public function setSystemViewPath($path)
 	{
 		if(($this->_systemViewPath=realpath($path))===false || !is_dir($this->_systemViewPath))
-			throw new CException(Yii::t('yii','The system view path "{path}" is not a valid directory.',
+			throw new CException(Yii::t('yii','The system views path "{path}" is not a valid directory.',
 				array('{path}'=>$path)));
 	}
 

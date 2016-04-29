@@ -17,11 +17,11 @@
  * CBaseController also implements the support for the following features:
  * <ul>
  * <li>{@link CClipWidget Clips} : a clip is a piece of captured output that can be inserted elsewhere.</li>
- * <li>{@link CWidget Widgets} : a widget is a self-contained sub-controller with its own view and model.</li>
+ * <li>{@link CWidget Widgets} : a widget is a self-contained sub-controller with its own views and model.</li>
  * <li>{@link COutputCache Fragment cache} : fragment cache selectively caches a portion of the output.</li>
  * </ul>
  *
- * To use a widget in a view, use the following in the view:
+ * To use a widget in a views, use the following in the views:
  * <pre>
  * $this->widget('path.to.widgetClass',array('property1'=>'value1',...));
  * </pre>
@@ -38,7 +38,7 @@
  * // ... display the clip contents
  * $this->endClip();
  * </pre>
- * Then, in a different view or place, the captured clip can be inserted as:
+ * Then, in a different views or place, the captured clip can be inserted as:
  * <pre>
  * echo $this->clips['clipID'];
  * </pre>
@@ -69,22 +69,22 @@ abstract class CBaseController extends CComponent
 	private $_widgetStack=array();
 
 	/**
-	 * Returns the view script file according to the specified view name.
+	 * Returns the views script file according to the specified views name.
 	 * This method must be implemented by child classes.
-	 * @param string $viewName view name
-	 * @return string the file path for the named view. False if the view cannot be found.
+	 * @param string $viewName views name
+	 * @return string the file path for the named views. False if the views cannot be found.
 	 */
 	abstract public function getViewFile($viewName);
 
 
 	/**
-	 * Renders a view file.
+	 * Renders a views file.
 	 *
-	 * @param string $viewFile view file path
-	 * @param array $data data to be extracted and made available to the view
+	 * @param string $viewFile views file path
+	 * @param array $data data to be extracted and made available to the views
 	 * @param boolean $return whether the rendering result should be returned instead of being echoed
 	 * @return string the rendering result. Null if the rendering result is not required.
-	 * @throws CException if the view file does not exist
+	 * @throws CException if the views file does not exist
 	 */
 	public function renderFile($viewFile,$data=null,$return=false)
 	{
@@ -98,17 +98,17 @@ abstract class CBaseController extends CComponent
 		else
 		{
 			$widget=end($this->_widgetStack);
-			throw new CException(Yii::t('yii','{controller} contains improperly nested widget tags in its view "{view}". A {widget} widget does not have an endWidget() call.',
-				array('{controller}'=>get_class($this), '{view}'=>$viewFile, '{widget}'=>get_class($widget))));
+			throw new CException(Yii::t('yii','{controller} contains improperly nested widget tags in its views "{views}". A {widget} widget does not have an endWidget() call.',
+				array('{controller}'=>get_class($this), '{views}'=>$viewFile, '{widget}'=>get_class($widget))));
 		}
 	}
 
 	/**
-	 * Renders a view file.
-	 * This method includes the view file as a PHP script
+	 * Renders a views file.
+	 * This method includes the views file as a PHP script
 	 * and captures the display result if required.
-	 * @param string $_viewFile_ view file
-	 * @param array $_data_ data to be extracted and made available to the view file
+	 * @param string $_viewFile_ views file
+	 * @param array $_data_ data to be extracted and made available to the views file
 	 * @param boolean $_return_ whether the rendering result should be returned as a string
 	 * @return string the rendering result. Null if the rendering result is not required.
 	 */
@@ -207,7 +207,7 @@ abstract class CBaseController extends CComponent
 			return $widget;
 		}
 		else
-			throw new CException(Yii::t('yii','{controller} has an extra endWidget({id}) call in its view.',
+			throw new CException(Yii::t('yii','{controller} has an extra endWidget({id}) call in its views.',
 				array('{controller}'=>get_class($this),'{id}'=>$id)));
 	}
 
@@ -274,21 +274,21 @@ abstract class CBaseController extends CComponent
 	}
 
 	/**
-	 * Begins the rendering of content that is to be decorated by the specified view.
-	 * @param mixed $view the name of the view that will be used to decorate the content. The actual view script
+	 * Begins the rendering of content that is to be decorated by the specified views.
+	 * @param mixed $view the name of the views that will be used to decorate the content. The actual views script
 	 * is resolved via {@link getViewFile}. If this parameter is null (default),
-	 * the default layout will be used as the decorative view.
+	 * the default layout will be used as the decorative views.
 	 * Note that if the current controller does not belong to
 	 * any module, the default layout refers to the application's {@link CWebApplication::layout default layout};
 	 * If the controller belongs to a module, the default layout refers to the module's
 	 * {@link CWebModule::layout default layout}.
-	 * @param array $data the variables (name=>value) to be extracted and made available in the decorative view.
+	 * @param array $data the variables (name=>value) to be extracted and made available in the decorative views.
 	 * @see endContent
 	 * @see CContentDecorator
 	 */
 	public function beginContent($view=null,$data=array())
 	{
-		$this->beginWidget('CContentDecorator',array('view'=>$view, 'data'=>$data));
+		$this->beginWidget('CContentDecorator',array('views'=>$view, 'data'=>$data));
 	}
 
 	/**

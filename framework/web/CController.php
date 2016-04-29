@@ -64,7 +64,7 @@
  * @property string $route The route (module ID, controller ID and action ID) of the current request.
  * @property CWebModule $module The module that this controller belongs to. It returns null
  * if the controller does not belong to any module.
- * @property string $viewPath The directory containing the view files for this controller. Defaults to 'protected/views/ControllerID'.
+ * @property string $viewPath The directory containing the views files for this controller. Defaults to 'protected/views/ControllerID'.
  * @property CMap $clips The list of clips.
  * @property string $pageTitle The page title. Defaults to the controller name and the action name.
  * @property CStack $cachingStack Stack of {@link COutputCache} objects.
@@ -538,12 +538,12 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * Returns the directory containing view files for this controller.
+	 * Returns the directory containing views files for this controller.
 	 * The default implementation returns 'protected/views/ControllerID'.
-	 * Child classes may override this method to use customized view path.
-	 * If the controller belongs to a module, the default view path
-	 * is the {@link CWebModule::getViewPath module view path} appended with the controller ID.
-	 * @return string the directory containing the view files for this controller. Defaults to 'protected/views/ControllerID'.
+	 * Child classes may override this method to use customized views path.
+	 * If the controller belongs to a module, the default views path
+	 * is the {@link CWebModule::getViewPath module views path} appended with the controller ID.
+	 * @return string the directory containing the views files for this controller. Defaults to 'protected/views/ControllerID'.
 	 */
 	public function getViewPath()
 	{
@@ -553,31 +553,31 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * Looks for the view file according to the given view name.
+	 * Looks for the views file according to the given views name.
 	 *
 	 * When a theme is currently active, this method will call {@link CTheme::getViewFile} to determine
-	 * which view file should be returned.
+	 * which views file should be returned.
 	 *
-	 * Otherwise, this method will return the corresponding view file based on the following criteria:
+	 * Otherwise, this method will return the corresponding views file based on the following criteria:
 	 * <ul>
-	 * <li>absolute view within a module: the view name starts with a single slash '/'.
-	 * In this case, the view will be searched for under the currently active module's view path.
-	 * If there is no active module, the view will be searched for under the application's view path.</li>
-	 * <li>absolute view within the application: the view name starts with double slashes '//'.
-	 * In this case, the view will be searched for under the application's view path.
+	 * <li>absolute views within a module: the views name starts with a single slash '/'.
+	 * In this case, the views will be searched for under the currently active module's views path.
+	 * If there is no active module, the views will be searched for under the application's views path.</li>
+	 * <li>absolute views within the application: the views name starts with double slashes '//'.
+	 * In this case, the views will be searched for under the application's views path.
 	 * This syntax has been available since version 1.1.3.</li>
-	 * <li>aliased view: the view name contains dots and refers to a path alias.
-	 * The view file is determined by calling {@link YiiBase::getPathOfAlias()}. Note that aliased views
-	 * cannot be themed because they can refer to a view file located at arbitrary places.</li>
-	 * <li>relative view: otherwise. Relative views will be searched for under the currently active
-	 * controller's view path.</li>
+	 * <li>aliased views: the views name contains dots and refers to a path alias.
+	 * The views file is determined by calling {@link YiiBase::getPathOfAlias()}. Note that aliased views
+	 * cannot be themed because they can refer to a views file located at arbitrary places.</li>
+	 * <li>relative views: otherwise. Relative views will be searched for under the currently active
+	 * controller's views path.</li>
 	 * </ul>
 	 *
-	 * After the view file is identified, this method may further call {@link CApplication::findLocalizedFile}
+	 * After the views file is identified, this method may further call {@link CApplication::findLocalizedFile}
 	 * to find its localized version if internationalization is needed.
 	 *
-	 * @param string $viewName view name
-	 * @return string the view file path, false if the view file does not exist
+	 * @param string $viewName views name
+	 * @return string the views file path, false if the views file does not exist
 	 * @see resolveViewFile
 	 * @see CApplication::findLocalizedFile
 	 */
@@ -592,7 +592,7 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * Looks for the layout view script based on the layout name.
+	 * Looks for the layout views script based on the layout name.
 	 *
 	 * The layout name can be specified in one of the following ways:
 	 *
@@ -600,35 +600,35 @@ class CController extends CBaseController
 	 * <li>layout is false: returns false, meaning no layout.</li>
 	 * <li>layout is null: the currently active module's layout will be used. If there is no active module,
 	 * the application's layout will be used.</li>
-	 * <li>a regular view name.</li>
+	 * <li>a regular views name.</li>
 	 * </ul>
 	 *
-	 * The resolution of the view file based on the layout view is similar to that in {@link getViewFile}.
+	 * The resolution of the views file based on the layout views is similar to that in {@link getViewFile}.
 	 * In particular, the following rules are followed:
 	 *
-	 * Otherwise, this method will return the corresponding view file based on the following criteria:
+	 * Otherwise, this method will return the corresponding views file based on the following criteria:
 	 * <ul>
 	 * <li>When a theme is currently active, this method will call {@link CTheme::getLayoutFile} to determine
-	 * which view file should be returned.</li>
-	 * <li>absolute view within a module: the view name starts with a single slash '/'.
-	 * In this case, the view will be searched for under the currently active module's view path.
-	 * If there is no active module, the view will be searched for under the application's view path.</li>
-	 * <li>absolute view within the application: the view name starts with double slashes '//'.
-	 * In this case, the view will be searched for under the application's view path.
+	 * which views file should be returned.</li>
+	 * <li>absolute views within a module: the views name starts with a single slash '/'.
+	 * In this case, the views will be searched for under the currently active module's views path.
+	 * If there is no active module, the views will be searched for under the application's views path.</li>
+	 * <li>absolute views within the application: the views name starts with double slashes '//'.
+	 * In this case, the views will be searched for under the application's views path.
 	 * This syntax has been available since version 1.1.3.</li>
-	 * <li>aliased view: the view name contains dots and refers to a path alias.
-	 * The view file is determined by calling {@link YiiBase::getPathOfAlias()}. Note that aliased views
-	 * cannot be themed because they can refer to a view file located at arbitrary places.</li>
-	 * <li>relative view: otherwise. Relative views will be searched for under the currently active
-	 * module's layout path. In case when there is no active module, the view will be searched for
+	 * <li>aliased views: the views name contains dots and refers to a path alias.
+	 * The views file is determined by calling {@link YiiBase::getPathOfAlias()}. Note that aliased views
+	 * cannot be themed because they can refer to a views file located at arbitrary places.</li>
+	 * <li>relative views: otherwise. Relative views will be searched for under the currently active
+	 * module's layout path. In case when there is no active module, the views will be searched for
 	 * under the application's layout path.</li>
 	 * </ul>
 	 *
-	 * After the view file is identified, this method may further call {@link CApplication::findLocalizedFile}
+	 * After the views file is identified, this method may further call {@link CApplication::findLocalizedFile}
 	 * to find its localized version if internationalization is needed.
 	 *
 	 * @param mixed $layoutName layout name
-	 * @return string the view file for the layout. False if the view file cannot be found
+	 * @return string the views file for the layout. False if the views file cannot be found
 	 */
 	public function getLayoutFile($layoutName)
 	{
@@ -659,30 +659,30 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * Finds a view file based on its name.
-	 * The view name can be in one of the following formats:
+	 * Finds a views file based on its name.
+	 * The views name can be in one of the following formats:
 	 * <ul>
-	 * <li>absolute view within a module: the view name starts with a single slash '/'.
-	 * In this case, the view will be searched for under the currently active module's view path.
-	 * If there is no active module, the view will be searched for under the application's view path.</li>
-	 * <li>absolute view within the application: the view name starts with double slashes '//'.
-	 * In this case, the view will be searched for under the application's view path.
+	 * <li>absolute views within a module: the views name starts with a single slash '/'.
+	 * In this case, the views will be searched for under the currently active module's views path.
+	 * If there is no active module, the views will be searched for under the application's views path.</li>
+	 * <li>absolute views within the application: the views name starts with double slashes '//'.
+	 * In this case, the views will be searched for under the application's views path.
 	 * This syntax has been available since version 1.1.3.</li>
-	 * <li>aliased view: the view name contains dots and refers to a path alias.
-	 * The view file is determined by calling {@link YiiBase::getPathOfAlias()}. Note that aliased views
-	 * cannot be themed because they can refer to a view file located at arbitrary places.</li>
-	 * <li>relative view: otherwise. Relative views will be searched for under the currently active
-	 * controller's view path.</li>
+	 * <li>aliased views: the views name contains dots and refers to a path alias.
+	 * The views file is determined by calling {@link YiiBase::getPathOfAlias()}. Note that aliased views
+	 * cannot be themed because they can refer to a views file located at arbitrary places.</li>
+	 * <li>relative views: otherwise. Relative views will be searched for under the currently active
+	 * controller's views path.</li>
 	 * </ul>
-	 * For absolute view and relative view, the corresponding view file is a PHP file
-	 * whose name is the same as the view name. The file is located under a specified directory.
+	 * For absolute views and relative views, the corresponding views file is a PHP file
+	 * whose name is the same as the views name. The file is located under a specified directory.
 	 * This method will call {@link CApplication::findLocalizedFile} to search for a localized file, if any.
-	 * @param string $viewName the view name
-	 * @param string $viewPath the directory that is used to search for a relative view name
-	 * @param string $basePath the directory that is used to search for an absolute view name under the application
-	 * @param string $moduleViewPath the directory that is used to search for an absolute view name under the current module.
-	 * If this is not set, the application base view path will be used.
-	 * @return mixed the view file path. False if the view file does not exist.
+	 * @param string $viewName the views name
+	 * @param string $viewPath the directory that is used to search for a relative views name
+	 * @param string $basePath the directory that is used to search for an absolute views name under the application
+	 * @param string $moduleViewPath the directory that is used to search for an absolute views name under the current module.
+	 * If this is not set, the application base views path will be used.
+	 * @return mixed the views file path. False if the views file does not exist.
 	 */
 	public function resolveViewFile($viewName,$viewPath,$basePath,$moduleViewPath=null)
 	{
@@ -756,20 +756,20 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * Renders a view with a layout.
+	 * Renders a views with a layout.
 	 *
-	 * This method first calls {@link renderPartial} to render the view (called content view).
-	 * It then renders the layout view which may embed the content view at appropriate place.
-	 * In the layout view, the content view rendering result can be accessed via variable
+	 * This method first calls {@link renderPartial} to render the views (called content views).
+	 * It then renders the layout views which may embed the content views at appropriate place.
+	 * In the layout views, the content views rendering result can be accessed via variable
 	 * <code>$content</code>. At the end, it calls {@link processOutput} to insert scripts
 	 * and dynamic contents if they are available.
 	 *
-	 * By default, the layout view script is "protected/views/layouts/main.php".
+	 * By default, the layout views script is "protected/views/layouts/main.php".
 	 * This may be customized by changing {@link layout}.
 	 *
-	 * @param string $view name of the view to be rendered. See {@link getViewFile} for details
-	 * about how the view script is resolved.
-	 * @param array $data data to be extracted into PHP variables and made available to the view script
+	 * @param string $view name of the views to be rendered. See {@link getViewFile} for details
+	 * about how the views script is resolved.
+	 * @param array $data data to be extracted into PHP variables and made available to the views script
 	 * @param boolean $return whether the rendering result should be returned instead of being displayed to end users.
 	 * @return string the rendering result. Null if the rendering result is not required.
 	 * @see renderPartial
@@ -796,9 +796,9 @@ class CController extends CBaseController
 
 	/**
 	 * This method is invoked at the beginning of {@link render()}.
-	 * You may override this method to do some preprocessing when rendering a view.
-	 * @param string $view the view to be rendered
-	 * @return boolean whether the view should be rendered.
+	 * You may override this method to do some preprocessing when rendering a views.
+	 * @param string $view the views to be rendered
+	 * @return boolean whether the views should be rendered.
 	 * @since 1.1.5
 	 */
 	protected function beforeRender($view)
@@ -807,11 +807,11 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * This method is invoked after the specified view is rendered by calling {@link render()}.
+	 * This method is invoked after the specified views is rendered by calling {@link render()}.
 	 * Note that this method is invoked BEFORE {@link processOutput()}.
-	 * You may override this method to do some postprocessing for the view rendering.
-	 * @param string $view the view that has been rendered
-	 * @param string $output the rendering result of the view. Note that this parameter is passed
+	 * You may override this method to do some postprocessing for the views rendering.
+	 * @param string $view the views that has been rendered
+	 * @param string $output the rendering result of the views. Note that this parameter is passed
 	 * as a reference. That means you can modify it within this method.
 	 * @since 1.1.5
 	 */
@@ -841,23 +841,23 @@ class CController extends CBaseController
 	}
 
 	/**
-	 * Renders a view.
+	 * Renders a views.
 	 *
-	 * The named view refers to a PHP script (resolved via {@link getViewFile})
+	 * The named views refers to a PHP script (resolved via {@link getViewFile})
 	 * that is included by this method. If $data is an associative array,
 	 * it will be extracted as PHP variables and made available to the script.
 	 *
 	 * This method differs from {@link render()} in that it does not
 	 * apply a layout to the rendered result. It is thus mostly used
-	 * in rendering a partial view, or an AJAX response.
+	 * in rendering a partial views, or an AJAX response.
 	 *
-	 * @param string $view name of the view to be rendered. See {@link getViewFile} for details
-	 * about how the view script is resolved.
-	 * @param array $data data to be extracted into PHP variables and made available to the view script
+	 * @param string $view name of the views to be rendered. See {@link getViewFile} for details
+	 * about how the views script is resolved.
+	 * @param array $data data to be extracted into PHP variables and made available to the views script
 	 * @param boolean $return whether the rendering result should be returned instead of being displayed to end users
 	 * @param boolean $processOutput whether the rendering result should be postprocessed using {@link processOutput}.
 	 * @return string the rendering result. Null if the rendering result is not required.
-	 * @throws CException if the view does not exist
+	 * @throws CException if the views does not exist
 	 * @see getViewFile
 	 * @see processOutput
 	 * @see render
@@ -875,8 +875,8 @@ class CController extends CBaseController
 				echo $output;
 		}
 		else
-			throw new CException(Yii::t('yii','{controller} cannot find the requested view "{view}".',
-				array('{controller}'=>get_class($this), '{view}'=>$view)));
+			throw new CException(Yii::t('yii','{controller} cannot find the requested views "{views}".',
+				array('{controller}'=>get_class($this), '{views}'=>$view)));
 	}
 
 	/**

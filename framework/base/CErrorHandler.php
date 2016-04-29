@@ -33,13 +33,13 @@ Yii::import('CHtml',true);
  * For security reasons, they only display the error message without any
  * sensitive information.
  *
- * CErrorHandler looks for the view templates from the following locations in order:
+ * CErrorHandler looks for the views templates from the following locations in order:
  * <ol>
  * <li><code>themes/ThemeName/views/system</code>: when a theme is active.</li>
  * <li><code>protected/views/system</code></li>
  * <li><code>framework/views</code></li>
  * </ol>
- * If the view is not found in a directory, it will be looked for in the next directory.
+ * If the views is not found in a directory, it will be looked for in the next directory.
  *
  * The property {@link maxSourceLines} can be changed to specify the number
  * of source code lines to be displayed in development views.
@@ -320,10 +320,10 @@ class CErrorHandler extends CApplicationComponent
 	}
 
 	/**
-	 * Renders the view.
-	 * @param string $view the view name (file name without extension).
-	 * See {@link getViewFile} for how a view file is located given its name.
-	 * @param array $data data to be passed to the view
+	 * Renders the views.
+	 * @param string $view the views name (file name without extension).
+	 * See {@link getViewFile} for how a views file is located given its name.
+	 * @param array $data data to be passed to the views
 	 */
 	protected function render($view,$data)
 	{
@@ -331,7 +331,7 @@ class CErrorHandler extends CApplicationComponent
 			Yii::app()->runController($this->errorAction);
 		else
 		{
-			// additional information to be passed to view
+			// additional information to be passed to views
 			$data['version']=$this->getVersionInfo();
 			$data['time']=time();
 			$data['admin']=$this->adminInfo;
@@ -340,10 +340,10 @@ class CErrorHandler extends CApplicationComponent
 	}
 
 	/**
-	 * Determines which view file should be used.
-	 * @param string $view view name (either 'exception' or 'error')
+	 * Determines which views file should be used.
+	 * @param string $view views name (either 'exception' or 'error')
 	 * @param integer $code HTTP status code
-	 * @return string view file path
+	 * @return string views file path
 	 */
 	protected function getViewFile($view,$code)
 	{
@@ -365,12 +365,12 @@ class CErrorHandler extends CApplicationComponent
 	}
 
 	/**
-	 * Looks for the view under the specified directory.
+	 * Looks for the views under the specified directory.
 	 * @param string $viewPath the directory containing the views
-	 * @param string $view view name (either 'exception' or 'error')
+	 * @param string $view views name (either 'exception' or 'error')
 	 * @param integer $code HTTP status code
-	 * @param string $srcLanguage the language that the view file is in
-	 * @return string view file path
+	 * @param string $srcLanguage the language that the views file is in
+	 * @return string views file path
 	 */
 	protected function getViewFileInternal($viewPath,$view,$code,$srcLanguage=null)
 	{

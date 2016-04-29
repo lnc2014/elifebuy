@@ -25,7 +25,7 @@
  * <li>Override {@link CController::actions()} and register an action of class CCaptchaAction with ID 'captcha'.</li>
  * <li>In the form model, declare an attribute to store user-entered verification code, and declare the attribute
  * to be validated by the 'captcha' validator.</li>
- * <li>In the controller view, insert a {@link CCaptcha} widget in the form.</li>
+ * <li>In the controller views, insert a {@link CCaptcha} widget in the form.</li>
  * </ol>
  *
  * @property string $verifyCode The verification code.

@@ -10,7 +10,7 @@
  */
 
 /**
- * CPradoViewRenderer implements a view renderer that allows users to use a template syntax similar to PRADO templates.
+ * CPradoViewRenderer implements a views renderer that allows users to use a template syntax similar to PRADO templates.
  *
  * To use CPradoViewRenderer, configure it as an application component named "viewRenderer" in the application configuration:
  * <pre>
@@ -24,7 +24,7 @@
  * )
  * </pre>
  *
- * CPradoViewRenderer allows you to write view files with the following syntax:
+ * CPradoViewRenderer allows you to write views files with the following syntax:
  * <pre>
  * // PHP tags:
  * <%= expression %>
@@ -72,10 +72,10 @@ class CPradoViewRenderer extends CViewRenderer
 	private $_sourceFile;
 
 	/**
-	 * Parses the source view file and saves the results as another file.
+	 * Parses the source views file and saves the results as another file.
 	 * This method is required by the parent class.
-	 * @param string $sourceFile the source view file path
-	 * @param string $viewFile the resulting view file path
+	 * @param string $sourceFile the source views file path
+	 * @param string $viewFile the resulting views file path
 	 */
 	protected function generateViewFile($sourceFile,$viewFile)
 	{

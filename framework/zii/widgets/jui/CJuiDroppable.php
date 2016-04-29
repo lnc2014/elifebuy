@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiDroppable encapsulates the {@link http://jqueryui.com/droppable/ JUI Droppable}
  * plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->beginWidget('zii.widgets.jui.CJuiDroppable',array(
  *     // additional javascript options for the droppable plugin

@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca9f8487-8a7a-483d-92fd-74571d7c7c5c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/minified.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/minified.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/views/common/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/views/error/close.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/views/error/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/views/error/error404.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/views/error/error500.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/elifebuy/views/site/index.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/css/minified.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/js/minified.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/4514586b/kindeditor-min.js" afterPath="$PROJECT_DIR$/assets/4514586b/kindeditor-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/46cd44a1/jquery.js" afterPath="$PROJECT_DIR$/assets/46cd44a1/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/46cd44a1/jquery.min.js" afterPath="$PROJECT_DIR$/assets/46cd44a1/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/46cd44a1/jquery.multifile.js" afterPath="$PROJECT_DIR$/assets/46cd44a1/jquery.multifile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CApplication.php" afterPath="$PROJECT_DIR$/framework/base/CApplication.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CErrorHandler.php" afterPath="$PROJECT_DIR$/framework/base/CErrorHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/interfaces.php" afterPath="$PROJECT_DIR$/framework/base/interfaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/ControllerCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/ControllerCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/CrudCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/CrudCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/commands/shell/FormCommand.php" afterPath="$PROJECT_DIR$/framework/cli/commands/shell/FormCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/_form.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/_search.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/_view.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/admin.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/create.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/index.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/update.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/crud/view.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/crud/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/form/action.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/form/action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/shell/form/form.php" afterPath="$PROJECT_DIR$/framework/cli/views/shell/form/form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/webapp/protected/components/Controller.php" afterPath="$PROJECT_DIR$/framework/cli/views/webapp/protected/components/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/webapp/protected/config/main.php" afterPath="$PROJECT_DIR$/framework/cli/views/webapp/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/webapp/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/framework/cli/views/webapp/protected/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/cli/views/webapp/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/framework/cli/views/webapp/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/console/CConsoleCommand.php" afterPath="$PROJECT_DIR$/framework/console/CConsoleCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlCommandBuilder.php" afterPath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlCommandBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlSchema.php" afterPath="$PROJECT_DIR$/framework/db/schema/mssql/CMssqlSchema.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/logging/CProfileLogRoute.php" afterPath="$PROJECT_DIR$/framework/logging/CProfileLogRoute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/logging/CWebLogRoute.php" afterPath="$PROJECT_DIR$/framework/logging/CWebLogRoute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/bg/yii.php" afterPath="$PROJECT_DIR$/framework/messages/bg/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/bs/yii.php" afterPath="$PROJECT_DIR$/framework/messages/bs/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/ca/yii.php" afterPath="$PROJECT_DIR$/framework/messages/ca/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/cs/yii.php" afterPath="$PROJECT_DIR$/framework/messages/cs/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/de/yii.php" afterPath="$PROJECT_DIR$/framework/messages/de/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/el/yii.php" afterPath="$PROJECT_DIR$/framework/messages/el/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/es/yii.php" afterPath="$PROJECT_DIR$/framework/messages/es/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/fa_ir/yii.php" afterPath="$PROJECT_DIR$/framework/messages/fa_ir/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/fi/yii.php" afterPath="$PROJECT_DIR$/framework/messages/fi/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/fr/yii.php" afterPath="$PROJECT_DIR$/framework/messages/fr/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/he/yii.php" afterPath="$PROJECT_DIR$/framework/messages/he/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/hu/yii.php" afterPath="$PROJECT_DIR$/framework/messages/hu/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/id/yii.php" afterPath="$PROJECT_DIR$/framework/messages/id/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/it/yii.php" afterPath="$PROJECT_DIR$/framework/messages/it/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/ja/yii.php" afterPath="$PROJECT_DIR$/framework/messages/ja/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/kk/yii.php" afterPath="$PROJECT_DIR$/framework/messages/kk/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/ko_kr/yii.php" afterPath="$PROJECT_DIR$/framework/messages/ko_kr/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/lt/yii.php" afterPath="$PROJECT_DIR$/framework/messages/lt/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/lv/yii.php" afterPath="$PROJECT_DIR$/framework/messages/lv/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/nl/yii.php" afterPath="$PROJECT_DIR$/framework/messages/nl/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/no/yii.php" afterPath="$PROJECT_DIR$/framework/messages/no/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/pl/yii.php" afterPath="$PROJECT_DIR$/framework/messages/pl/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/pt/yii.php" afterPath="$PROJECT_DIR$/framework/messages/pt/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/pt_br/yii.php" afterPath="$PROJECT_DIR$/framework/messages/pt_br/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/ro/yii.php" afterPath="$PROJECT_DIR$/framework/messages/ro/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/ru/yii.php" afterPath="$PROJECT_DIR$/framework/messages/ru/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/sk/yii.php" afterPath="$PROJECT_DIR$/framework/messages/sk/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/sr_sr/yii.php" afterPath="$PROJECT_DIR$/framework/messages/sr_sr/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/sr_yu/yii.php" afterPath="$PROJECT_DIR$/framework/messages/sr_yu/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/sv/yii.php" afterPath="$PROJECT_DIR$/framework/messages/sv/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/ta_in/yii.php" afterPath="$PROJECT_DIR$/framework/messages/ta_in/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/th/yii.php" afterPath="$PROJECT_DIR$/framework/messages/th/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/tr/yii.php" afterPath="$PROJECT_DIR$/framework/messages/tr/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/uk/yii.php" afterPath="$PROJECT_DIR$/framework/messages/uk/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/vi/yii.php" afterPath="$PROJECT_DIR$/framework/messages/vi/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/zh_cn/yii.php" afterPath="$PROJECT_DIR$/framework/messages/zh_cn/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/messages/zh_tw/yii.php" afterPath="$PROJECT_DIR$/framework/messages/zh_tw/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/SQL.php" afterPath="$PROJECT_DIR$/framework/vendors/TextHighlighter/Text/Highlighter/SQL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CBaseController.php" afterPath="$PROJECT_DIR$/framework/web/CBaseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CController.php" afterPath="$PROJECT_DIR$/framework/web/CController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CExtController.php" afterPath="$PROJECT_DIR$/framework/web/CExtController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CTheme.php" afterPath="$PROJECT_DIR$/framework/web/CTheme.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CThemeManager.php" afterPath="$PROJECT_DIR$/framework/web/CThemeManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CUrlManager.php" afterPath="$PROJECT_DIR$/framework/web/CUrlManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CWebApplication.php" afterPath="$PROJECT_DIR$/framework/web/CWebApplication.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CWebModule.php" afterPath="$PROJECT_DIR$/framework/web/CWebModule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/actions/CViewAction.php" afterPath="$PROJECT_DIR$/framework/web/actions/CViewAction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/form/CForm.php" afterPath="$PROJECT_DIR$/framework/web/form/CForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/helpers/CHtml.php" afterPath="$PROJECT_DIR$/framework/web/helpers/CHtml.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.min.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/js/source/jquery.multifile.js" afterPath="$PROJECT_DIR$/framework/web/js/source/jquery.multifile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/renderers/CPradoViewRenderer.php" afterPath="$PROJECT_DIR$/framework/web/renderers/CPradoViewRenderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/renderers/CViewRenderer.php" afterPath="$PROJECT_DIR$/framework/web/renderers/CViewRenderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CActiveForm.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CActiveForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CContentDecorator.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CContentDecorator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/COutputCache.php" afterPath="$PROJECT_DIR$/framework/web/widgets/COutputCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/COutputProcessor.php" afterPath="$PROJECT_DIR$/framework/web/widgets/COutputProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CTabView.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CTabView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CTreeView.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CTreeView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/CWidget.php" afterPath="$PROJECT_DIR$/framework/web/widgets/CWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/captcha/CCaptchaAction.php" afterPath="$PROJECT_DIR$/framework/web/widgets/captcha/CCaptchaAction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/widgets/views/flexWidget.php" afterPath="$PROJECT_DIR$/framework/web/widgets/views/flexWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/yiilite.php" afterPath="$PROJECT_DIR$/framework/yiilite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CBaseListView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CBaseListView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CBreadcrumbs.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CBreadcrumbs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CDetailView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CDetailView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/CListView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/CListView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/assets/gridview/jquery.yiigridview.js" afterPath="$PROJECT_DIR$/framework/zii/widgets/assets/gridview/jquery.yiigridview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" afterPath="$PROJECT_DIR$/framework/zii/widgets/assets/listview/jquery.yiilistview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CButtonColumn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CCheckBoxColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CCheckBoxColumn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CDataColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CDataColumn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridColumn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridView.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CGridView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/grid/CLinkColumn.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/grid/CLinkColumn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiAccordion.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiAccordion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiAutoComplete.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiAutoComplete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiButton.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiButton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDatePicker.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDatePicker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDialog.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDialog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDraggable.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDraggable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDroppable.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiDroppable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiProgressBar.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiProgressBar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiResizable.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiResizable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSelectable.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSelectable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSlider.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSlider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSliderInput.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSliderInput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSortable.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiSortable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiTabs.php" afterPath="$PROJECT_DIR$/framework/zii/widgets/jui/CJuiTabs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Controller.php" afterPath="$PROJECT_DIR$/protected/components/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/XAdminiAcl.php" afterPath="$PROJECT_DIR$/protected/components/XAdminiAcl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/messages/zh_cn/yii.php" afterPath="$PROJECT_DIR$/protected/messages/zh_cn/yii.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admini/controllers/OperationController.php" afterPath="$PROJECT_DIR$/protected/modules/admini/controllers/OperationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/widget/kindeditor/assets/kindeditor-min.js" afterPath="$PROJECT_DIR$/protected/widget/kindeditor/assets/kindeditor-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/static/js/jquery/jquery-1.7.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jscolor/jscolor.js" afterPath="$PROJECT_DIR$/static/js/jscolor/jscolor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/kindeditor/kindeditor-min.js" afterPath="$PROJECT_DIR$/static/js/kindeditor/kindeditor-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/kindeditor/plugins/file_manager/file_manager.js" afterPath="$PROJECT_DIR$/static/js/kindeditor/plugins/file_manager/file_manager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/lightbox/js/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/static/js/lightbox/js/jquery-1.10.2.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/about-us.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/about-us.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/cart.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/cart.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/checkout.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/checkout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/components.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/components.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/contact-us-2.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/contact-us-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/contact-us.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/contact-us.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/PIE.htc" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/PIE.htc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/flexslider.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/flexslider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/innerpage.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/innerpage.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/isotope.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/isotope.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/jquery.nouislider.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/jquery.nouislider.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/owl.carousel.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/owl.carousel.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/owl.theme.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/owl.theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/css/responsive.css" afterPath="$PROJECT_DIR$/themes/elifebuy/html/css/responsive.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/font/fontawesome/fonts/fontawesome.eot" afterPath="$PROJECT_DIR$/themes/elifebuy/html/font/fontawesome/fonts/fontawesome.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/font/fontawesome/fonts/fontawesome.svg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/font/fontawesome/fonts/fontawesome.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/font/fontawesome/fonts/fontawesome.ttf" afterPath="$PROJECT_DIR$/themes/elifebuy/html/font/fontawesome/fonts/fontawesome.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/font/fontawesome/fonts/fontawesome.woff" afterPath="$PROJECT_DIR$/themes/elifebuy/html/font/fontawesome/fonts/fontawesome.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/font/fontawesome/fonts/fontawesomed41d.eot" afterPath="$PROJECT_DIR$/themes/elifebuy/html/font/fontawesome/fonts/fontawesomed41d.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/fonts/glyphicons-halflings-regular-2.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/fonts/glyphicons-halflings-regular-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/fonts/glyphicons-halflings-regular-3.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/fonts/glyphicons-halflings-regular-3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/fonts/glyphicons-halflings-regular-4.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/fonts/glyphicons-halflings-regular-4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/fonts/glyphicons-halflings-regular.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/fonts/glyphicons-halflings-regular.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/fonts/glyphicons-halflings-regulard41d.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/fonts/glyphicons-halflings-regulard41d.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/demo/Barn-Dress-Girl_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/demo/Barn-Dress-Girl_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/demo/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/demo/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/demo/P2200214.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/demo/P2200214.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/demo/images-footer.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/demo/images-footer.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/accessories/000095-0014_2.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/accessories/000095-0014_2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/accessories/000095-0014_2_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/accessories/000095-0014_2_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/accessories/255615-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/accessories/255615-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/accessories/255615-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/accessories/255615-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/accessories/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/accessories/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/blazer/105797-1056_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/blazer/105797-1056_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/blazer/105797-1056_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/blazer/105797-1056_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/blazer/677326-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/blazer/677326-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/blazer/677326-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/blazer/677326-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/blazer/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/blazer/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/217365-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/217365-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/217365-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/217365-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/271865-0286_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/271865-0286_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/271865-0286_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/271865-0286_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/634082-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/634082-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/634082-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/634082-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jacket/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jacket/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jumper/271866-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jumper/271866-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jumper/271866-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jumper/271866-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/jumper/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/jumper/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shirt/217360-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shirt/217360-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shirt/217360-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shirt/217360-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shirt/803500-6989_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shirt/803500-6989_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shirt/803500-6989_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shirt/803500-6989_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shirt/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shirt/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shoes/000312-2259_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shoes/000312-2259_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shoes/000312-2259_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shoes/000312-2259_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/shoes/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/shoes/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/slide1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/slide1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/men/slide2.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/men/slide2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/accessories/582120-0029_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/accessories/582120-0029_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/accessories/582120-0029_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/accessories/582120-0029_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/accessories/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/accessories/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/589550-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/589550-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/589550-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/589550-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/688086-0286_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/688086-0286_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/688086-0286_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/688086-0286_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/848051-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/848051-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/848051-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/848051-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/848099-0067_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/848099-0067_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/848099-0067_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/848099-0067_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/basic/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/basic/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/dress/256479-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/dress/256479-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/dress/256479-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/dress/256479-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/dress/278638-0083_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/dress/278638-0083_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/dress/278638-0083_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/dress/278638-0083_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/dress/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/dress/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/jeans/220008-0054_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/jeans/220008-0054_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/jeans/220008-0054_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/jeans/220008-0054_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/jeans/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/jeans/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/legging/104331-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/legging/104331-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/legging/104331-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/legging/104331-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/legging/714384-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/legging/714384-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/legging/714384-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/legging/714384-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/legging/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/legging/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/103314-0735_1_o.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/103314-0735_1_o.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/103314-0735_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/103314-0735_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/103314-0735_2_o.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/103314-0735_2_o.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/103314-0735_2_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/103314-0735_2_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/430041-0014_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/430041-0014_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/430041-0014_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/430041-0014_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/skirt/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/skirt/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/swimwear/116796-0001_1.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/swimwear/116796-0001_1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/swimwear/116796-0001_1_t.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/swimwear/116796-0001_1_t.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/images/women/swimwear/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/images/women/swimwear/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/AjaxLoader2.gif" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/AjaxLoader2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/Descr.WD3" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/Descr.WD3" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/bg_pattern.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/bg_pattern.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/favicon/apple-touch-icon-144x144-precomposed.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/favicon/apple-touch-icon-144x144-precomposed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/favicon/apple-touch-icon-72x72-precomposed.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/favicon/apple-touch-icon-72x72-precomposed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/favicon/apple-touch-icon-precomposed.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/favicon/apple-touch-icon-precomposed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/favicon/favicon.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/favicon/favicon.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/grabbing.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/grabbing.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/logo.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/mastercard.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/mastercard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/paypal.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/paypal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/products/1.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/products/1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/products/2.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/products/2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/products/3.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/products/3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/products/4.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/products/4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/star.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/star.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/transparent.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/transparent.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/img/visacard.png" afterPath="$PROJECT_DIR$/themes/elifebuy/html/img/visacard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/index-2.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/index-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/index-3.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/index-3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/contact.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/contact.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/gmap3.min.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/gmap3.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/jquery.flexslider-min.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/jquery.flexslider-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/jquery.isotope.min.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/jquery.isotope.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/jquery.min.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/jquery.nouislider.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/jquery.nouislider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/modernizr.min.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/modernizr.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/owl.carousel.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/owl.carousel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/js/products.js" afterPath="$PROJECT_DIR$/themes/elifebuy/html/js/products.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/product-2.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/product-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/product.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/product.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/products-2.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/products-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/products.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/products.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/rev-slider/img/slides/3303349658_cfaebb811f_o.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/rev-slider/img/slides/3303349658_cfaebb811f_o.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/rev-slider/img/slides/Street-Fashion.jpg" afterPath="$PROJECT_DIR$/themes/elifebuy/html/rev-slider/img/slides/Street-Fashion.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/store-locator.html" afterPath="$PROJECT_DIR$/themes/elifebuy/html/store-locator.html" />
+    </list>
+    <ignored path="elifebuy.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="elifebuy" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/elifebuy/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#89#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/elifebuy/views/common/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_goods.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/views/post/list_goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.7">
+              <caret line="11" column="93" selection-start-line="11" selection-start-column="93" selection-end-line="11" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.45">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.2">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/protected/components/XAdminiAcl.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admini/controllers/OperationController.php" />
+        <option value="$PROJECT_DIR$/themes/elifebuy/html/js/jquery.flexslider-min.js" />
+        <option value="$PROJECT_DIR$/themes/elifebuy/view/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/themes/elifebuy/views/site/index.php" />
+        <option value="$PROJECT_DIR$/themes/elifebuy/views/common/header.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elifebuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\elifebuy\themes\elifebuy\views\common" />
+      <recent name="D:\wamp\www\elifebuy\themes\elifebuy\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\elifebuy\themes\elifebuy" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca9f8487-8a7a-483d-92fd-74571d7c7c5c" name="Default" comment="" />
+      <created>1461901105971</created>
+      <option name="number" value="Default" />
+      <updated>1461901105971</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admini/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12124711">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <marker date="1461897604229" expanded="true" signature="5932:6033" placeholder="SELECT a.`ti..lnc_post..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admini/controllers/OrderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.4">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/XAdminiAcl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.133333">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Ad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.024249423">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/AdminLogger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52540416">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/XXcache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34411085">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admini/controllers/OperationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.9">
+          <caret line="149" column="56" selection-start-line="149" selection-start-column="56" selection-end-line="149" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admini/views/operation/ad_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admini/views/operation/ad_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admini/views/operation/_ad_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8729792">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/minified.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/products.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/gmap3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/owl.carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/modernizr.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/jquery.nouislider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/jquery.isotope.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/html/js/jquery.flexslider-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5564516">
+          <caret line="4" column="2876" selection-start-line="4" selection-start-column="2876" selection-end-line="4" selection-end-column="2876" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/error/error500.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/yiilite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34411085">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12124711">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/XFrontBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.072748266">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19399539">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.072748266">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <marker date="1461897778731" expanded="true" signature="966:1404" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="1059:1378" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="1091:1349" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="1122:1316" placeholder="..." />
+            <marker date="1461897778731" expanded="false" signature="1246:1273" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="1685:1879" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="2579:3018" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="2672:2992" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="2704:2963" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="2735:2930" placeholder="..." />
+            <marker date="1461897778731" expanded="false" signature="2859:2886" placeholder="..." />
+            <marker date="1461897778731" expanded="true" signature="3309:3503" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/views/error/close.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.45">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/post/list_goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7">
+          <caret line="11" column="93" selection-start-line="11" selection-start-column="93" selection-end-line="11" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/views/_include/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24249423">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/elifebuy/views/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

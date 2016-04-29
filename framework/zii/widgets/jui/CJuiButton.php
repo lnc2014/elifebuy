@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiInputWidget');
  * CJuiButton encapsulates the {@link http://jqueryui.com/button/ JUI Button}
  * plugin.
  *
- * To use this widget as a submit button, you may insert the following code in a view:
+ * To use this widget as a submit button, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiButton',array(
  *     'buttonType'=>'submit',
@@ -28,7 +28,7 @@ Yii::import('zii.widgets.jui.CJuiInputWidget');
  * ));
  * </pre>
  *
- * To use this widget as a button, you may insert the following code in a view:
+ * To use this widget as a button, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiButton',array(
  *     'buttonType'=>'button',

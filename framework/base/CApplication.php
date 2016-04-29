@@ -94,7 +94,7 @@ abstract class CApplication extends CModule
 	public $charset='UTF-8';
 	/**
 	 * @var string the language that the application is written in. This mainly refers to
-	 * the language that the messages and view files are in. Defaults to 'en_us' (US English).
+	 * the language that the messages and views files are in. Defaults to 'en_us' (US English).
 	 */
 	public $sourceLanguage='en_us';
 
@@ -366,9 +366,9 @@ abstract class CApplication extends CModule
 	 *
 	 * The searching is based on the specified language code. In particular,
 	 * a file with the same name will be looked for under the subdirectory
-	 * named as the locale ID. For example, given the file "path/to/view.php"
+	 * named as the locale ID. For example, given the file "path/to/views.php"
 	 * and locale ID "zh_cn", the localized file will be looked for as
-	 * "path/to/zh_cn/view.php". If the file is not found, the original file
+	 * "path/to/zh_cn/views.php". If the file is not found, the original file
 	 * will be returned.
 	 *
 	 * For consistency, it is recommended that the locale ID is given

@@ -21,7 +21,7 @@
  * @property string $version The version of this module.
  * @property string $controllerPath The directory that contains the controller classes. Defaults to 'moduleDir/controllers'
  * where moduleDir is the directory containing the module class.
- * @property string $viewPath The root directory of view files. Defaults to 'moduleDir/views' where moduleDir is
+ * @property string $viewPath The root directory of views files. Defaults to 'moduleDir/views' where moduleDir is
  * the directory containing the module class.
  * @property string $layoutPath The root directory of layout files. Defaults to 'moduleDir/views/layouts' where
  * moduleDir is the directory containing the module class.
@@ -117,7 +117,7 @@ class CWebModule extends CModule
 	}
 
 	/**
-	 * @return string the root directory of view files. Defaults to 'moduleDir/views' where
+	 * @return string the root directory of views files. Defaults to 'moduleDir/views' where
 	 * moduleDir is the directory containing the module class.
 	 */
 	public function getViewPath()
@@ -129,13 +129,13 @@ class CWebModule extends CModule
 	}
 
 	/**
-	 * @param string $path the root directory of view files.
+	 * @param string $path the root directory of views files.
 	 * @throws CException if the directory does not exist.
 	 */
 	public function setViewPath($path)
 	{
 		if(($this->_viewPath=realpath($path))===false || !is_dir($this->_viewPath))
-			throw new CException(Yii::t('yii','The view path "{path}" is not a valid directory.',
+			throw new CException(Yii::t('yii','The views path "{path}" is not a valid directory.',
 				array('{path}'=>$path)));
 	}
 

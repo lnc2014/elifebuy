@@ -16,7 +16,7 @@
  * so that it points to the "views" subdirectory under the directory containing
  * the controller class file.
  *
- * @property string $viewPath The directory containing the view files for this controller.
+ * @property string $viewPath The directory containing the views files for this controller.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.web
@@ -27,11 +27,11 @@ class CExtController extends CController
 	private $_viewPath;
 
 	/**
-	 * Returns the directory containing view files for this controller.
-	 * This method overrides the parent implementation by specifying the view path
+	 * Returns the directory containing views files for this controller.
+	 * This method overrides the parent implementation by specifying the views path
 	 * to be the "views" subdirectory under the directory containing the controller
 	 * class file.
-	 * @return string the directory containing the view files for this controller.
+	 * @return string the directory containing the views files for this controller.
 	 */
 	public function getViewPath()
 	{
@@ -44,7 +44,7 @@ class CExtController extends CController
 	}
 
 	/**
-	 * @param string $value the directory containing the view files for this controller.
+	 * @param string $value the directory containing the views files for this controller.
 	 */
 	public function setViewPath($value)
 	{

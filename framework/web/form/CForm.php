@@ -21,9 +21,9 @@
  * A form can be rendered in different ways. One can call the {@link render} method
  * to get a quick form rendering without writing any HTML code; one can also override
  * {@link render} to render the form in a different layout; and one can use an external
- * view template to render each form element explicitly. In these ways, the {@link render}
+ * views template to render each form element explicitly. In these ways, the {@link render}
  * method can be applied to all kinds of forms and thus achieves maximum reusability;
- * while the external view template keeps maximum flexibility in rendering complex forms.
+ * while the external views template keeps maximum flexibility in rendering complex forms.
  *
  * Form input specifications are organized in terms of a form element hierarchy.
  * At the root of the hierarchy, it is the root CForm object. The root form object maintains

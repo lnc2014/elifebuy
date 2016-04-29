@@ -9,10 +9,10 @@
  */
 
 /**
- * CGridColumn is the base class for all grid view column classes.
+ * CGridColumn is the base class for all grid views column classes.
  *
  * A CGridColumn object represents the specification for rendering the cells in
- * a particular grid view column.
+ * a particular grid views column.
  *
  * In a column, there is one header cell, multiple data cells, and an optional footer cell.
  * Child classes may override {@link renderHeaderCellContent}, {@link renderDataCellContent}
@@ -28,12 +28,12 @@
 abstract class CGridColumn extends CComponent
 {
 	/**
-	 * @var string the ID of this column. This value should be unique among all grid view columns.
+	 * @var string the ID of this column. This value should be unique among all grid views columns.
 	 * If this is not set, it will be assigned one automatically.
 	 */
 	public $id;
 	/**
-	 * @var CGridView the grid view object that owns this column.
+	 * @var CGridView the grid views object that owns this column.
 	 */
 	public $grid;
 	/**
@@ -81,7 +81,7 @@ abstract class CGridColumn extends CComponent
 
 	/**
 	 * Constructor.
-	 * @param CGridView $grid the grid view that owns this column.
+	 * @param CGridView $grid the grid views that owns this column.
 	 */
 	public function __construct($grid)
 	{
@@ -90,7 +90,7 @@ abstract class CGridColumn extends CComponent
 
 	/**
 	 * Initializes the column.
-	 * This method is invoked by the grid view when it initializes itself before rendering.
+	 * This method is invoked by the grid views when it initializes itself before rendering.
 	 * You may override this method to prepare the column for rendering.
 	 */
 	public function init()

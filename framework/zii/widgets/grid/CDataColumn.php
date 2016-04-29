@@ -11,12 +11,12 @@
 Yii::import('zii.widgets.grid.CGridColumn');
 
 /**
- * CDataColumn represents a grid view column that is associated with a data attribute or PHP expression.
+ * CDataColumn represents a grid views column that is associated with a data attribute or PHP expression.
  *
  * Either {@link name} or {@link value} should be specified. The former specifies
  * a data attribute name, while the latter a PHP expression whose value should be rendered instead.
  *
- * The property {@link sortable} determines whether the grid view can be sorted according to this column.
+ * The property {@link sortable} determines whether the grid views can be sorted according to this column.
  * Note that the {@link name} should always be set if the column needs to be sortable. The {@link name}
  * value will be used by {@link CSort} to render a clickable link in the header cell to trigger the sorting.
  *

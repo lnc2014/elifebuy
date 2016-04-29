@@ -10,14 +10,10 @@ class SiteController extends XFrontBase
      * 首页
      */
     public function actionIndex ()
-    { 
-        //找出所有的分类
-        $cates = LncGoodsCate::model()->findAll();  
-        
-        $goods = Post::model()->findAll();
-        
-        $this->render('index',array('cates'=>$cates,'goods'=>$goods));
+    {
+        $this->render('index');
     }
+
 
     public function actionGoodsList(){
         

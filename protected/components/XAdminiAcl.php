@@ -58,6 +58,9 @@ class XAdminiAcl
                 array('name'=>'单页管理','url'=>'page/index','acl'=>'page_index','list_acl'=>array(
                         '录入'=>'page_create', '编辑'=>'page_update', '删除'=>'page_delete'
                         )),
+                array('name'=>'广告管理','url'=>'operation/ad','acl'=>'ad_index','list_acl'=>array(
+                    '录入'=>'ad_create', '编辑'=>'ad_update', '批量变更状态'=>'ad_verify', '删除'=>'ad_delete'
+                )),
         	)
           ),
 //     	'商品管理' => array(

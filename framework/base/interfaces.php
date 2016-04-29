@@ -209,10 +209,10 @@ interface IWebServiceProvider
 
 
 /**
- * IViewRenderer interface is implemented by a view renderer class.
+ * IViewRenderer interface is implemented by a views renderer class.
  *
- * A view renderer is {@link CWebApplication::viewRenderer viewRenderer}
- * application component whose wants to replace the default view rendering logic
+ * A views renderer is {@link CWebApplication::viewRenderer viewRenderer}
+ * application component whose wants to replace the default views rendering logic
  * implemented in {@link CBaseController}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -222,10 +222,10 @@ interface IWebServiceProvider
 interface IViewRenderer
 {
 	/**
-	 * Renders a view file.
-	 * @param CBaseController $context the controller or widget who is rendering the view file.
-	 * @param string $file the view file path
-	 * @param mixed $data the data to be passed to the view
+	 * Renders a views file.
+	 * @param CBaseController $context the controller or widget who is rendering the views file.
+	 * @param string $file the views file path
+	 * @param mixed $data the data to be passed to the views
 	 * @param boolean $return whether the rendering result should be returned
 	 * @return mixed the rendering result, or null if the rendering result is not needed.
 	 */

@@ -12,7 +12,7 @@
  * CBreadcrumbs displays a list of links indicating the position of the current page in the whole website.
  *
  * For example, breadcrumbs like "Home > Sample Post > Edit" means the user is viewing an edit page
- * for the "Sample Post". He can click on "Sample Post" to view that page, or he can click on "Home"
+ * for the "Sample Post". He can click on "Sample Post" to views that page, or he can click on "Home"
  * to return to the homepage.
  *
  * To use CBreadcrumbs, one usually needs to configure its {@link links} property, which specifies
@@ -21,14 +21,14 @@
  * <pre>
  * $this->widget('zii.widgets.CBreadcrumbs', array(
  *     'links'=>array(
- *         'Sample post'=>array('post/view', 'id'=>12),
+ *         'Sample post'=>array('post/views', 'id'=>12),
  *         'Edit',
  *     ),
  * ));
  * </pre>
  *
  * Because breadcrumbs usually appears in nearly every page of a website, the widget is better to be placed
- * in a layout view. One can define a property "breadcrumbs" in the base controller class and assign it to the widget
+ * in a layout views. One can define a property "breadcrumbs" in the base controller class and assign it to the widget
  * in the layout, like the following:
  *
  * <pre>
@@ -37,7 +37,7 @@
  * ));
  * </pre>
  *
- * Then, in each view script, one only needs to assign the "breadcrumbs" property as needed.
+ * Then, in each views script, one only needs to assign the "breadcrumbs" property as needed.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package zii.widgets
@@ -72,12 +72,12 @@ class CBreadcrumbs extends CWidget
 	 * If an element's key is an integer, it means the element will be rendered as a label only (meaning the current page).
 	 *
 	 * The following example will generate breadcrumbs as "Home > Sample post > Edit", where "Home" points to the homepage,
-	 * "Sample post" points to the "index.php?r=post/view&id=12" page, and "Edit" is a label. Note that the "Home" link
+	 * "Sample post" points to the "index.php?r=post/views&id=12" page, and "Edit" is a label. Note that the "Home" link
 	 * is specified via {@link homeLink} separately.
 	 *
 	 * <pre>
 	 * array(
-	 *     'Sample post'=>array('post/view', 'id'=>12),
+	 *     'Sample post'=>array('post/views', 'id'=>12),
 	 *     'Edit',
 	 * )
 	 * </pre>

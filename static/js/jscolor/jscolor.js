@@ -378,8 +378,8 @@ var jscolor = {
 			if(!isPickerOwner()) {
 				var tp = jscolor.getElementPos(target); // target pos
 				var ts = jscolor.getElementSize(target); // target size
-				var vp = jscolor.getViewPos(); // view pos
-				var vs = jscolor.getViewSize(); // view size
+				var vp = jscolor.getViewPos(); // views pos
+				var vs = jscolor.getViewSize(); // views size
 				var ps = getPickerDims(this); // picker size
 				var a, b, c;
 				switch(this.pickerPosition.toLowerCase()) {
@@ -638,7 +638,7 @@ var jscolor = {
 						holdSld && setSld(event);
 						dispatchImmediateChange();
 					}
-					e.stopPropagation(); // prevent move "view" on broswer
+					e.stopPropagation(); // prevent move "views" on broswer
 					e.preventDefault(); // prevent Default - Android Fix (else android generated only 1-2 touchmove events)
 				}, false);
 			}

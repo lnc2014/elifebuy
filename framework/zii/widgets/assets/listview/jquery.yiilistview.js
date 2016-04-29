@@ -11,7 +11,7 @@
 	var yiiXHR = {};
 	/**
 	 * yiiListView set function.
-	 * @param options map settings for the list view. Availablel options are as follows:
+	 * @param options map settings for the list views. Availablel options are as follows:
 	 * - ajaxUpdate: array, IDs of the containers whose content may be updated by ajax response
 	 * - ajaxVar: string, the name of the request variable indicating the ID of the element triggering the AJAX request
 	 * - ajaxType: string, the type (GET or POST) of the AJAX request
@@ -73,7 +73,7 @@
 
 	/**
 	 * Returns the key value for the specified row
-	 * @param id string the ID of the list view container
+	 * @param id string the ID of the list views container
 	 * @param index integer the zero-based index of the data item
 	 * @return string the key value
 	 */
@@ -82,9 +82,9 @@
 	};
 
 	/**
-	 * Returns the URL that generates the list view content.
-	 * @param id string the ID of the list view container
-	 * @return string the URL that generates the list view content.
+	 * Returns the URL that generates the list views content.
+	 * @param id string the ID of the list views container
+	 * @return string the URL that generates the list views content.
 	 */
 	$.fn.yiiListView.getUrl = function(id) {
 		var settings = $.fn.yiiListView.settings[id];
@@ -92,10 +92,10 @@
 	};
 
 	/**
-	 * Performs an AJAX-based update of the list view contents.
-	 * @param id string the ID of the list view container
+	 * Performs an AJAX-based update of the list views contents.
+	 * @param id string the ID of the list views container
 	 * @param options map the AJAX request options (see jQuery.ajax API manual). By default,
-	 * the URL to be requested is the one that generates the current content of the list view.
+	 * the URL to be requested is the one that generates the current content of the list views.
 	 */
 	$.fn.yiiListView.update = function(id, options) {
 		var customError,

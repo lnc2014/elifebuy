@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiSlider encapsulates the {@link http://jqueryui.com/slider/ JUI
  * slider} plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiSlider',array(
  *     'value'=>37,

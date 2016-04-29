@@ -30,7 +30,7 @@
  *             'label'=>'City',
  *             'type'=>'raw',
  *             'value'=>CHtml::link(CHtml::encode($model->city->name),
- *                                  array('city/view','id'=>$model->city->id)),
+ *                                  array('city/views','id'=>$model->city->id)),
  *         ),
  *     ),
  * ));
@@ -52,7 +52,7 @@ class CDetailView extends CWidget
 	 */
 	public $data;
 	/**
-	 * @var array a list of attributes to be displayed in the detail view. Each array element
+	 * @var array a list of attributes to be displayed in the detail views. Each array element
 	 * represents the specification for displaying one particular attribute.
 	 *
 	 * An attribute can be specified as a string in the format of "Name:Type:Label".
@@ -94,7 +94,7 @@ class CDetailView extends CWidget
 	 */
 	public $nullDisplay;
 	/**
-	 * @var string the name of the tag for rendering the detail view. Defaults to 'table'.
+	 * @var string the name of the tag for rendering the detail views. Defaults to 'table'.
 	 * If set to null, no tag will be rendered.
 	 * @see itemTemplate
 	 */
@@ -115,20 +115,20 @@ class CDetailView extends CWidget
 	/**
 	 * @var array the HTML options used for {@link tagName}
 	 */
-	public $htmlOptions=array('class'=>'detail-view');
+	public $htmlOptions=array('class'=>'detail-views');
 	/**
-	 * @var string the base script URL for all detail view resources (e.g. javascript, CSS file, images).
-	 * Defaults to null, meaning using the integrated detail view resources (which are published as assets).
+	 * @var string the base script URL for all detail views resources (e.g. javascript, CSS file, images).
+	 * Defaults to null, meaning using the integrated detail views resources (which are published as assets).
 	 */
 	public $baseScriptUrl;
 	/**
-	 * @var string the URL of the CSS file used by this detail view. Defaults to null, meaning using the integrated
+	 * @var string the URL of the CSS file used by this detail views. Defaults to null, meaning using the integrated
 	 * CSS file. If this is set false, you are responsible to explicitly include the necessary CSS file in your page.
 	 */
 	public $cssFile;
 
 	/**
-	 * Initializes the detail view.
+	 * Initializes the detail views.
 	 * This method will initialize required property values.
 	 */
 	public function init()
@@ -163,8 +163,8 @@ class CDetailView extends CWidget
 	}
 
 	/**
-	 * Renders the detail view.
-	 * This is the main entry of the whole detail view rendering.
+	 * Renders the detail views.
+	 * This is the main entry of the whole detail views rendering.
 	 */
 	public function run()
 	{

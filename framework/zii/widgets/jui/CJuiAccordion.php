@@ -17,13 +17,13 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiAccordion encapsulates the {@link http://jqueryui.com/accordion/ JUI Accordion}
  * plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiAccordion',array(
  *     'panels'=>array(
  *         'panel 1'=>'content for panel 1',
  *         'panel 2'=>'content for panel 2',
- *         // panel 3 contains the content rendered by a partial view
+ *         // panel 3 contains the content rendered by a partial views
  *         'panel 3'=>$this->renderPartial('_partial',null,true),
  *     ),
  *     // additional javascript options for the accordion plugin

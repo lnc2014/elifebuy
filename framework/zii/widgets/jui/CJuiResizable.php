@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiResizable encapsulates the {@link http://jqueryui.com/resizable/ JUI Resizable}
  * plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->beginWidget('zii.widgets.jui.CJuiResizable',array(
  *     // additional javascript options for the resizable plugin

@@ -36,6 +36,7 @@ class Controller extends CController
         $this->_baseUrl = Yii::app()->baseUrl;
         $this->_theme = Yii::app()->theme;
         $this->_themePath = str_replace(array('\\', '\\\\'), '/', Yii::app()->theme->basePath);
+
     }
 
     /*

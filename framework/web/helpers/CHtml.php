@@ -252,7 +252,7 @@ class CHtml
 
 	/**
 	 * Registers a 'refresh' meta tag.
-	 * This method can be invoked anywhere in a view. It will register a 'refresh'
+	 * This method can be invoked anywhere in a views. It will register a 'refresh'
 	 * meta tag with {@link CClientScript} so that the page can be refreshed in
 	 * the specified seconds.
 	 * @param integer $seconds the number of seconds to wait before refreshing the page

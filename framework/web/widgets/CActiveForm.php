@@ -86,7 +86,7 @@
  * respectively. We may customize these CSS classes by configuring the
  * {@link clientOptions} property or specifying in the {@link error} method.
  *
- * The following is a piece of sample view code showing how to use CActiveForm:
+ * The following is a piece of sample views code showing how to use CActiveForm:
  *
  * <pre>
  * <?php $form = $this->beginWidget('CActiveForm', array(

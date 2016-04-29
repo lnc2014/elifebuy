@@ -11,14 +11,14 @@
 Yii::import('zii.widgets.grid.CGridColumn');
 
 /**
- * CCheckBoxColumn represents a grid view column of checkboxes.
+ * CCheckBoxColumn represents a grid views column of checkboxes.
  *
  * CCheckBoxColumn supports no checking (read-only), single check and multiple checking.
  * The mode is determined according to {@link selectableRows}. When in multiple checking mode, the header cell will display
  * an additional checkbox, clicking on which will check or uncheck all of the checkboxes in the data cells.
  * The header cell can be customized by {@link headerTemplate}.
  *
- * Additionally selecting a checkbox can select a grid view row (depending on {@link CGridView::selectableRows} value) if
+ * Additionally selecting a checkbox can select a grid views row (depending on {@link CGridView::selectableRows} value) if
  * {@link selectableRows} is null (default).
  *
  * By default, the checkboxes rendered in data cells will have the values that are the same as

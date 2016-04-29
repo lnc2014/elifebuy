@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiInputWidget');
  * CJuiDatePicker encapsulates the {@link http://jqueryui.com/datepicker/ JUI
  * datepicker} plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiDatePicker',array(
  *     'name'=>'publishDate',

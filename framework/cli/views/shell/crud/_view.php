@@ -1,6 +1,6 @@
 <?php
 /**
- * This is the template for generating the partial view for rendering a single model.
+ * This is the template for generating the partial views for rendering a single model.
  * The following variables are available in this template:
  * - $ID: the primary key name
  * - $modelClass: the model class name
@@ -11,7 +11,7 @@
 
 <?php
 echo "\t<b><?php echo CHtml::encode(\$data->getAttributeLabel('{$ID}')); ?>:</b>\n";
-echo "\t<?php echo CHtml::link(CHtml::encode(\$data->{$ID}), array('view', 'id'=>\$data->{$ID})); ?>\n\t<br />\n\n";
+echo "\t<?php echo CHtml::link(CHtml::encode(\$data->{$ID}), array('views', 'id'=>\$data->{$ID})); ?>\n\t<br />\n\n";
 $count=0;
 foreach($columns as $column)
 {

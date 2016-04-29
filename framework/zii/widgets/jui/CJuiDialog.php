@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiDialog encapsulates the {@link http://jqueryui.com/dialog/ JUI Dialog}
  * plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->beginWidget('zii.widgets.jui.CJuiDialog',array(
  *     'id'=>'mydialog',

@@ -35,7 +35,7 @@
 	methods = {
 		/**
 		 * yiiGridView set function.
-		 * @param options map settings for the grid view. Available options are as follows:
+		 * @param options map settings for the grid views. Available options are as follows:
 		 * - ajaxUpdate: array, IDs of the containers whose content may be updated by ajax response
 		 * - ajaxVar: string, the name of the request variable indicating the ID of the element triggering the AJAX request
 		 * - ajaxType: string, the type (GET or POST) of the AJAX request
@@ -201,8 +201,8 @@
 		},
 
 		/**
-		 * Returns the URL that generates the grid view content.
-		 * @return string the URL that generates the grid view content.
+		 * Returns the URL that generates the grid views content.
+		 * @return string the URL that generates the grid views content.
 		 */
 		getUrl: function () {
 			var sUrl = gridSettings[this.attr('id')].url;
@@ -230,9 +230,9 @@
 		},
 
 		/**
-		 * Performs an AJAX-based update of the grid view contents.
+		 * Performs an AJAX-based update of the grid views contents.
 		 * @param options map the AJAX request options (see jQuery.ajax API manual). By default,
-		 * the URL to be requested is the one that generates the current content of the grid view.
+		 * the URL to be requested is the one that generates the current content of the grid views.
 		 * @return object the jQuery object
 		 */
 		update: function (options) {
@@ -407,7 +407,7 @@
 	$.fn.yiiGridView.settings = gridSettings;
 	/**
 	 * Returns the key value for the specified row
-	 * @param id string the ID of the grid view container
+	 * @param id string the ID of the grid views container
 	 * @param row integer the row number (zero-based index)
 	 * @return string the key value
 	 */
@@ -416,9 +416,9 @@
 	};
 
 	/**
-	 * Returns the URL that generates the grid view content.
-	 * @param id string the ID of the grid view container
-	 * @return string the URL that generates the grid view content.
+	 * Returns the URL that generates the grid views content.
+	 * @param id string the ID of the grid views container
+	 * @return string the URL that generates the grid views content.
 	 */
 	$.fn.yiiGridView.getUrl = function (id) {
 		return $('#' + id).yiiGridView('getUrl');
@@ -426,7 +426,7 @@
 
 	/**
 	 * Returns the jQuery collection of the cells in the specified row.
-	 * @param id string the ID of the grid view container
+	 * @param id string the ID of the grid views container
 	 * @param row integer the row number (zero-based index)
 	 * @return jQuery the jQuery collection of the cells in the specified row.
 	 */
@@ -436,7 +436,7 @@
 
 	/**
 	 * Returns the jQuery collection of the cells in the specified column.
-	 * @param id string the ID of the grid view container
+	 * @param id string the ID of the grid views container
 	 * @param column integer the column number (zero-based index)
 	 * @return jQuery the jQuery collection of the cells in the specified column.
 	 */
@@ -445,10 +445,10 @@
 	};
 
 	/**
-	 * Performs an AJAX-based update of the grid view contents.
-	 * @param id string the ID of the grid view container
+	 * Performs an AJAX-based update of the grid views contents.
+	 * @param id string the ID of the grid views container
 	 * @param options map the AJAX request options (see jQuery.ajax API manual). By default,
-	 * the URL to be requested is the one that generates the current content of the grid view.
+	 * the URL to be requested is the one that generates the current content of the grid views.
 	 */
 	$.fn.yiiGridView.update = function (id, options) {
 		$('#' + id).yiiGridView('update', options);
@@ -456,7 +456,7 @@
 
 	/**
 	 * Returns the key values of the currently selected rows.
-	 * @param id string the ID of the grid view container
+	 * @param id string the ID of the grid views container
 	 * @return array the key values of the currently selected rows.
 	 */
 	$.fn.yiiGridView.getSelection = function (id) {
@@ -465,7 +465,7 @@
 
 	/**
 	 * Returns the key values of the currently checked rows.
-	 * @param id string the ID of the grid view container
+	 * @param id string the ID of the grid views container
 	 * @param column_id string the ID of the column
 	 * @return array the key values of the currently checked rows.
 	 */

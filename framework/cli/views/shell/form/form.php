@@ -1,6 +1,6 @@
 <?php
 /**
- * This is the template for generating the form view for the specified model.
+ * This is the template for generating the form views for the specified model.
  * The following variables are available in this template:
  * - $modelClass: the model class name
  * - $attributes: a list of attribute names to receive form inputs

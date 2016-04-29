@@ -14,7 +14,7 @@ Yii::import('zii.widgets.CBaseListView');
  * CListView displays a list of data items in terms of a list.
  *
  * Unlike {@link CGridView} which displays the data items in a table, CListView allows one to use
- * a view template to render each data item. As a result, CListView could generate more flexible
+ * a views template to render each data item. As a result, CListView could generate more flexible
  * rendering result.
  *
  * CListView supports both sorting and pagination of the data items. The sorting
@@ -32,7 +32,7 @@ Yii::import('zii.widgets.CBaseListView');
  *
  * $this->widget('zii.widgets.CListView', array(
  *     'dataProvider'=>$dataProvider,
- *     'itemView'=>'_post',   // refers to the partial view named '_post'
+ *     'itemView'=>'_post',   // refers to the partial views named '_post'
  *     'sortableAttributes'=>array(
  *         'title',
  *         'create_time'=>'Post Time',
@@ -42,8 +42,8 @@ Yii::import('zii.widgets.CBaseListView');
  *
  * The above code first creates a data provider for the <code>Post</code> ActiveRecord class.
  * It then uses CListView to display every data item as returned by the data provider.
- * The display is done via the partial view named '_post'. This partial view will be rendered
- * once for every data item. In the view, one can access the current data item via variable <code>$data</code>.
+ * The display is done via the partial views named '_post'. This partial views will be rendered
+ * once for every data item. In the views, one can access the current data item via variable <code>$data</code>.
  * For more details, see {@link itemView}.
  *
  * In order to support sorting, one has to specify the {@link sortableAttributes} property.
@@ -56,16 +56,16 @@ Yii::import('zii.widgets.CBaseListView');
 class CListView extends CBaseListView
 {
 	/**
-	 * @var string the view used for rendering each data item.
+	 * @var string the views used for rendering each data item.
 	 * This property value will be passed as the first parameter to either {@link CController::renderPartial}
 	 * or {@link CWidget::render} to render each data item.
-	 * In the corresponding view template, the following variables can be used in addition to those declared in {@link viewData}:
+	 * In the corresponding views template, the following variables can be used in addition to those declared in {@link viewData}:
 	 * <ul>
-	 * <li><code>$this</code>: refers to the owner of this list view widget. For example, if the widget is in the view of a controller,
+	 * <li><code>$this</code>: refers to the owner of this list views widget. For example, if the widget is in the views of a controller,
 	 * then <code>$this</code> refers to the controller.</li>
 	 * <li><code>$data</code>: refers to the data item currently being rendered.</li>
 	 * <li><code>$index</code>: refers to the zero-based index of the data item currently being rendered.</li>
-	 * <li><code>$widget</code>: refers to this list view widget instance.</li>
+	 * <li><code>$widget</code>: refers to this list views widget instance.</li>
 	 * </ul>
 	 */
 	public $itemView;
@@ -86,17 +86,17 @@ class CListView extends CBaseListView
 	 */
 	public $sortableAttributes;
 	/**
-	 * @var string the template to be used to control the layout of various components in the list view.
+	 * @var string the template to be used to control the layout of various components in the list views.
 	 * These tokens are recognized: {summary}, {sorter}, {items} and {pager}. They will be replaced with the
 	 * summary text, the sort links, the data item list, and the pager.
 	 */
 	public $template="{summary}\n{sorter}\n{items}\n{pager}";
 	/**
 	 * @var string the CSS class name that will be assigned to the widget container element
-	 * when the widget is updating its content via AJAX. Defaults to 'list-view-loading'.
+	 * when the widget is updating its content via AJAX. Defaults to 'list-views-loading'.
 	 * @since 1.1.1
 	 */
-	public $loadingCssClass='list-view-loading';
+	public $loadingCssClass='list-views-loading';
 	/**
 	 * @var string the CSS class name for the sorter container. Defaults to 'sorter'.
 	 */
@@ -111,7 +111,7 @@ class CListView extends CBaseListView
 	public $sorterFooter='';
 	/**
 	 * @var mixed the ID of the container whose content may be updated with an AJAX response.
-	 * Defaults to null, meaning the container for this list view instance.
+	 * Defaults to null, meaning the container for this list views instance.
 	 * If it is set false, it means sorting and pagination will be performed in normal page requests
 	 * instead of AJAX requests. If the sorting and pagination should trigger the update of multiple
 	 * containers' content in AJAX fashion, these container IDs may be listed here (separated with comma).
@@ -166,22 +166,22 @@ class CListView extends CBaseListView
 	public $ajaxType;
 	/**
 	 * @var string a javascript function that will be invoked before an AJAX update occurs.
-	 * The function signature is <code>function(id)</code> where 'id' refers to the ID of the list view.
+	 * The function signature is <code>function(id)</code> where 'id' refers to the ID of the list views.
 	 */
 	public $beforeAjaxUpdate;
 	/**
 	 * @var string a javascript function that will be invoked after a successful AJAX response is received.
-	 * The function signature is <code>function(id, data)</code> where 'id' refers to the ID of the list view
+	 * The function signature is <code>function(id, data)</code> where 'id' refers to the ID of the list views
 	 * 'data' the received ajax response data.
 	 */
 	public $afterAjaxUpdate;
 	/**
-	 * @var string the base script URL for all list view resources (e.g. javascript, CSS file, images).
-	 * Defaults to null, meaning using the integrated list view resources (which are published as assets).
+	 * @var string the base script URL for all list views resources (e.g. javascript, CSS file, images).
+	 * Defaults to null, meaning using the integrated list views resources (which are published as assets).
 	 */
 	public $baseScriptUrl;
 	/**
-	 * @var string the URL of the CSS file used by this list view. Defaults to null, meaning using the integrated
+	 * @var string the URL of the CSS file used by this list views. Defaults to null, meaning using the integrated
 	 * CSS file. If this is set false, you are responsible to explicitly include the necessary CSS file in your page.
 	 */
 	public $cssFile;
@@ -201,7 +201,7 @@ class CListView extends CBaseListView
 	public $enableHistory=false;
 
 	/**
-	 * Initializes the list view.
+	 * Initializes the list views.
 	 * This method will initialize required property values and instantiate {@link columns} objects.
 	 */
 	public function init()
@@ -211,7 +211,7 @@ class CListView extends CBaseListView
 		parent::init();
 
 		if(!isset($this->htmlOptions['class']))
-			$this->htmlOptions['class']='list-view';
+			$this->htmlOptions['class']='list-views';
 
 		if($this->baseScriptUrl===null)
 			$this->baseScriptUrl=Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('zii.widgets.assets')).'/listview';

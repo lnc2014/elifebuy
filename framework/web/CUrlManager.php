@@ -62,7 +62,7 @@
  * <pre>
  * array(
  *      '<_c:(post|comment)>/<id:\d+>/<_a:(create|update|delete)>'=>'<_c>/<_a>',
- *      '<_c:(post|comment)>/<id:\d+>'=>'<_c>/view',
+ *      '<_c:(post|comment)>/<id:\d+>'=>'<_c>/views',
  *      '<_c:(post|comment)>s/*'=>'<_c>/list',
  * )
  * </pre>

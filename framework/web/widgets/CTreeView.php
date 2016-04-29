@@ -9,16 +9,16 @@
  */
 
 /**
- * CTreeView displays a tree view of hierarchical data.
+ * CTreeView displays a tree views of hierarchical data.
  *
- * It encapsulates the excellent tree view plugin for jQuery
+ * It encapsulates the excellent tree views plugin for jQuery
  * ({@link http://bassistance.de/jquery-plugins/jquery-plugin-treeview/}).
  *
  * To use CTreeView, simply sets {@link data} to the data that you want
  * to present and you are there.
  *
  * CTreeView also supports dynamic data loading via AJAX. To do so, set
- * {@link url} to be the URL that can serve the tree view data upon request.
+ * {@link url} to be the URL that can serve the tree views data upon request.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.web.widgets
@@ -27,22 +27,22 @@
 class CTreeView extends CWidget
 {
 	/**
-	 * @var array the data that can be used to generate the tree view content.
-	 * Each array element corresponds to a tree view node with the following structure:
+	 * @var array the data that can be used to generate the tree views content.
+	 * Each array element corresponds to a tree views node with the following structure:
 	 * <ul>
 	 * <li>text: string, required, the HTML text associated with this node.</li>
-	 * <li>expanded: boolean, optional, whether the tree view node is expanded.</li>
+	 * <li>expanded: boolean, optional, whether the tree views node is expanded.</li>
 	 * <li>id: string, optional, the ID identifying the node. This is used
-	 *   in dynamic loading of tree view (see {@link url}).</li>
+	 *   in dynamic loading of tree views (see {@link url}).</li>
 	 * <li>hasChildren: boolean, optional, defaults to false, whether clicking on this
-	 *   node should trigger dynamic loading of more tree view nodes from server.
+	 *   node should trigger dynamic loading of more tree views nodes from server.
 	 *   The {@link url} property must be set in order to make this effective.</li>
 	 * <li>children: array, optional, child nodes of this node.</li>
 	 * <li>htmlOptions: array, additional HTML attributes (see {@link CHtml::tag}).
 	 *   This option has been available since version 1.1.7.</li>
 	 * </ul>
 	 * Note, anything enclosed between the beginWidget and endWidget calls will
-	 * also be treated as tree view content, which appends to the content generated
+	 * also be treated as tree views content, which appends to the content generated
 	 * from this data.
 	 */
 	public $data;
@@ -59,7 +59,7 @@ class CTreeView extends CWidget
 	 * Setting this property will enable the dynamic treeview loading.
 	 * When the page is displayed, the browser will request this URL with a GET parameter
 	 * named 'root' whose value is 'source'. The server script should then generate the
-	 * needed tree view data corresponding to the root of the tree (see {@link saveDataAsJson}.)
+	 * needed tree views data corresponding to the root of the tree (see {@link saveDataAsJson}.)
 	 * When a node has a CSS class 'hasChildren', then expanding this node will also
 	 * cause a dynamic loading of its child nodes. In this case, the value of the 'root' GET parameter
 	 * is the 'id' property of the node.
@@ -113,7 +113,7 @@ class CTreeView extends CWidget
 	public $options=array();
 	/**
 	 * @var array additional HTML attributes that will be rendered in the UL tag.
-	 * The default tree view CSS has defined the following CSS classes which can be enabled
+	 * The default tree views CSS has defined the following CSS classes which can be enabled
 	 * by specifying the 'class' option here:
 	 * <ul>
 	 * <li>treeview-black</li>
@@ -129,7 +129,7 @@ class CTreeView extends CWidget
 	/**
 	 * Initializes the widget.
 	 * This method registers all needed client scripts and renders
-	 * the tree view content.
+	 * the tree views content.
 	 */
 	public function init()
 	{
@@ -176,9 +176,9 @@ class CTreeView extends CWidget
 	}
 
 	/**
-	 * Generates tree view nodes in HTML from the data array.
-	 * @param array $data the data for the tree view (see {@link data} for possible data structure).
-	 * @return string the generated HTML for the tree view
+	 * Generates tree views nodes in HTML from the data array.
+	 * @param array $data the data for the tree views (see {@link data} for possible data structure).
+	 * @return string the generated HTML for the tree views
 	 */
 	public static function saveDataAsHtml($data)
 	{
@@ -228,11 +228,11 @@ class CTreeView extends CWidget
 	}
 
 	/**
-	 * Saves tree view data in JSON format.
-	 * This method is typically used in dynamic tree view loading
+	 * Saves tree views data in JSON format.
+	 * This method is typically used in dynamic tree views loading
 	 * when the server code needs to send to the client the dynamic
-	 * tree view data.
-	 * @param array $data the data for the tree view (see {@link data} for possible data structure).
+	 * tree views data.
+	 * @param array $data the data for the tree views (see {@link data} for possible data structure).
 	 * @return string the JSON representation of the data
 	 */
 	public static function saveDataAsJson($data)

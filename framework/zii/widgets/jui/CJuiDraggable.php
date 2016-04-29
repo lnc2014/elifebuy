@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiDraggable encapsulates the {@link http://jqueryui.com/draggable/ JUI Draggable}
  * plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->beginWidget('zii.widgets.jui.CJuiDraggable',array(
  *     // additional javascript options for the draggable plugin

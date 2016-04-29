@@ -22,7 +22,7 @@
  * @property CBaseController $owner Owner/creator of this widget. It could be either a widget or a controller.
  * @property string $id Id of the widget.
  * @property CController $controller The controller that this widget belongs to.
- * @property string $viewPath The directory containing the view files for this widget.
+ * @property string $viewPath The directory containing the views files for this widget.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.web.widgets
@@ -35,7 +35,7 @@ class CWidget extends CBaseController
 	 * When a widget is declared an action provider in {@link CController::actions},
 	 * a prefix can be specified to differentiate its action IDs from others.
 	 * The same prefix should then also be used to configure this property
-	 * when the widget is used in a view of the controller.
+	 * when the widget is used in a views of the controller.
 	 */
 	public $actionPrefix;
 	/**
@@ -47,7 +47,7 @@ class CWidget extends CBaseController
 	public $skin='default';
 
 	/**
-	 * @var array view paths for different types of widgets
+	 * @var array views paths for different types of widgets
 	 */
 	private static $_viewPaths;
 	/**
@@ -156,11 +156,11 @@ class CWidget extends CBaseController
 	}
 
 	/**
-	 * Returns the directory containing the view files for this widget.
+	 * Returns the directory containing the views files for this widget.
 	 * The default implementation returns the 'views' subdirectory of the directory containing the widget class file.
 	 * If $checkTheme is set true, the directory "ThemeID/views/ClassName" will be returned when it exists.
-	 * @param boolean $checkTheme whether to check if the theme contains a view path for the widget.
-	 * @return string the directory containing the view files for this widget.
+	 * @param boolean $checkTheme whether to check if the theme contains a views path for the widget.
+	 * @return string the directory containing the views files for this widget.
 	 */
 	public function getViewPath($checkTheme=false)
 	{
@@ -187,14 +187,14 @@ class CWidget extends CBaseController
 	}
 
 	/**
-	 * Looks for the view script file according to the view name.
-	 * This method will look for the view under the widget's {@link getViewPath viewPath}.
-	 * The view script file is named as "ViewName.php". A localized view file
+	 * Looks for the views script file according to the views name.
+	 * This method will look for the views under the widget's {@link getViewPath viewPath}.
+	 * The views script file is named as "ViewName.php". A localized views file
 	 * may be returned if internationalization is needed. See {@link CApplication::findLocalizedFile}
 	 * for more details.
-	 * The view name can also refer to a path alias if it contains dot characters.
-	 * @param string $viewName name of the view (without file extension)
-	 * @return string the view file path. False if the view file does not exist
+	 * The views name can also refer to a path alias if it contains dot characters.
+	 * @param string $viewName name of the views (without file extension)
+	 * @return string the views file path. False if the views file does not exist
 	 * @see CApplication::findLocalizedFile
 	 */
 	public function getViewFile($viewName)
@@ -224,18 +224,18 @@ class CWidget extends CBaseController
 	}
 
 	/**
-	 * Renders a view.
+	 * Renders a views.
 	 *
-	 * The named view refers to a PHP script (resolved via {@link getViewFile})
+	 * The named views refers to a PHP script (resolved via {@link getViewFile})
 	 * that is included by this method. If $data is an associative array,
 	 * it will be extracted as PHP variables and made available to the script.
 	 *
-	 * @param string $view name of the view to be rendered. See {@link getViewFile} for details
-	 * about how the view script is resolved.
-	 * @param array $data data to be extracted into PHP variables and made available to the view script
+	 * @param string $view name of the views to be rendered. See {@link getViewFile} for details
+	 * about how the views script is resolved.
+	 * @param array $data data to be extracted into PHP variables and made available to the views script
 	 * @param boolean $return whether the rendering result should be returned instead of being displayed to end users
 	 * @return string the rendering result. Null if the rendering result is not required.
-	 * @throws CException if the view does not exist
+	 * @throws CException if the views does not exist
 	 * @see getViewFile
 	 */
 	public function render($view,$data=null,$return=false)
@@ -243,7 +243,7 @@ class CWidget extends CBaseController
 		if(($viewFile=$this->getViewFile($view))!==false)
 			return $this->renderFile($viewFile,$data,$return);
 		else
-			throw new CException(Yii::t('yii','{widget} cannot find the view "{view}".',
-				array('{widget}'=>get_class($this), '{view}'=>$view)));
+			throw new CException(Yii::t('yii','{widget} cannot find the views "{views}".',
+				array('{widget}'=>get_class($this), '{views}'=>$view)));
 	}
 }

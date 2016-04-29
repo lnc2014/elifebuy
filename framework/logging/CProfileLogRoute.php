@@ -17,7 +17,7 @@
  * CProfileLogRoute supports two types of report by setting the {@link setReport report} property:
  * <ul>
  * <li>summary: list the execution time of every marked code block</li>
- * <li>callstack: list the mark code blocks in a hierarchical view reflecting their calling sequence.</li>
+ * <li>callstack: list the mark code blocks in a hierarchical views reflecting their calling sequence.</li>
  * </ul>
  *
  * @property string $report The type of the profiling report to display. Defaults to 'summary'.

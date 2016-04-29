@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiSelectable encapsulates the {@link http://jqueryui.com/selectable/ JUI Selectable}
  * plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiSelectable',array(
  *     'items'=>array(

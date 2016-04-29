@@ -104,7 +104,7 @@ class CMssqlSchema extends CDbSchema
 			->execute();
 	}
 
-	private $_normalTables=array();  // non-view tables
+	private $_normalTables=array();  // non-views tables
 	/**
 	 * Enables or disables integrity check.
 	 * @param boolean $check whether to turn on or off the integrity check.

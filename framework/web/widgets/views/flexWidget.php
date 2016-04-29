@@ -1,6 +1,6 @@
 <?php
 /**
- * The view file for CFlexWidget.
+ * The views file for CFlexWidget.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @link http://www.yiiframework.com/

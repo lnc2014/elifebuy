@@ -11,9 +11,9 @@
 Yii::import('zii.widgets.grid.CGridColumn');
 
 /**
- * CButtonColumn represents a grid view column that renders one or several buttons.
+ * CButtonColumn represents a grid views column that renders one or several buttons.
  *
- * By default, it will display three buttons, "view", "update" and "delete", which triggers the corresponding
+ * By default, it will display three buttons, "views", "update" and "delete", which triggers the corresponding
  * actions on the model of the row.
  *
  * By configuring {@link buttons} and {@link template} properties, the column can display other buttons
@@ -39,24 +39,24 @@ class CButtonColumn extends CGridColumn
 	public $footerHtmlOptions=array('class'=>'button-column');
 	/**
 	 * @var string the template that is used to render the content in each data cell.
-	 * These default tokens are recognized: {view}, {update} and {delete}. If the {@link buttons} property
+	 * These default tokens are recognized: {views}, {update} and {delete}. If the {@link buttons} property
 	 * defines additional buttons, their IDs are also recognized here. For example, if a button named 'preview'
 	 * is declared in {@link buttons}, we can use the token '{preview}' here to specify where to display the button.
 	 */
-	public $template='{view} {update} {delete}';
+	public $template='{views} {update} {delete}';
 	/**
-	 * @var string the label for the view button. Defaults to "View".
+	 * @var string the label for the views button. Defaults to "View".
 	 * Note that the label will not be HTML-encoded when rendering.
 	 */
 	public $viewButtonLabel;
 	/**
-	 * @var string the image URL for the view button. If not set, an integrated image will be used.
+	 * @var string the image URL for the views button. If not set, an integrated image will be used.
 	 * You may set this property to be false to render a text link instead.
 	 */
 	public $viewButtonImageUrl;
 	/**
-	 * @var string a PHP expression that is evaluated for every view button and whose result is used
-	 * as the URL for the view button. In this expression, you can use the following variables:
+	 * @var string a PHP expression that is evaluated for every views button and whose result is used
+	 * as the URL for the views button. In this expression, you can use the following variables:
 	 * <ul>
 	 *   <li><code>$row</code> the row number (zero-based)</li>
 	 *   <li><code>$data</code> the data model for the row</li>
@@ -67,11 +67,11 @@ class CButtonColumn extends CGridColumn
 	 * A PHP expression can be any PHP code that has a value. To learn more about what an expression is,
 	 * please refer to the {@link http://www.php.net/manual/en/language.expressions.php php manual}.
 	 */
-	public $viewButtonUrl='Yii::app()->controller->createUrl("view",array("id"=>$data->primaryKey))';
+	public $viewButtonUrl='Yii::app()->controller->createUrl("views",array("id"=>$data->primaryKey))';
 	/**
-	 * @var array the HTML options for the view button tag.
+	 * @var array the HTML options for the views button tag.
 	 */
-	public $viewButtonOptions=array('class'=>'view');
+	public $viewButtonOptions=array('class'=>'views');
 
 	/**
 	 * @var string the label for the update button. Defaults to "Update".
@@ -178,7 +178,7 @@ class CButtonColumn extends CGridColumn
 	 * A PHP expression can be any PHP code that has a value. To learn more about what an expression is,
 	 * please refer to the {@link http://www.php.net/manual/en/language.expressions.php php manual}.
 	 *
-	 * If the 'buttonID' is 'view', 'update' or 'delete' the options will be applied to the default buttons.
+	 * If the 'buttonID' is 'views', 'update' or 'delete' the options will be applied to the default buttons.
 	 *
 	 * Note that in order to display non-default buttons, the {@link template} property needs to
 	 * be configured so that the corresponding button IDs appear as tokens in the template.
@@ -210,7 +210,7 @@ class CButtonColumn extends CGridColumn
 	}
 
 	/**
-	 * Initializes the default buttons (view, update and delete).
+	 * Initializes the default buttons (views, update and delete).
 	 */
 	protected function initDefaultButtons()
 	{
@@ -221,7 +221,7 @@ class CButtonColumn extends CGridColumn
 		if($this->deleteButtonLabel===null)
 			$this->deleteButtonLabel=Yii::t('zii','Delete');
 		if($this->viewButtonImageUrl===null)
-			$this->viewButtonImageUrl=$this->grid->baseScriptUrl.'/view.png';
+			$this->viewButtonImageUrl=$this->grid->baseScriptUrl.'/views.png';
 		if($this->updateButtonImageUrl===null)
 			$this->updateButtonImageUrl=$this->grid->baseScriptUrl.'/update.png';
 		if($this->deleteButtonImageUrl===null)
@@ -229,7 +229,7 @@ class CButtonColumn extends CGridColumn
 		if($this->deleteConfirmation===null)
 			$this->deleteConfirmation=Yii::t('zii','Are you sure you want to delete this item?');
 
-		foreach(array('view','update','delete') as $id)
+		foreach(array('views','update','delete') as $id)
 		{
 			$button=array(
 				'label'=>$this->{$id.'ButtonLabel'},
@@ -306,7 +306,7 @@ EOD;
 
 	/**
 	 * Renders the data cell content.
-	 * This method renders the view, update and delete buttons in the data cell.
+	 * This method renders the views, update and delete buttons in the data cell.
 	 * @param integer $row the row number (zero-based)
 	 * @param mixed $data the data associated with the row
 	 */

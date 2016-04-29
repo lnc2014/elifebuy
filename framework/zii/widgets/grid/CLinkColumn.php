@@ -11,7 +11,7 @@
 Yii::import('zii.widgets.grid.CGridColumn');
 
 /**
- * CLinkColumn represents a grid view column that renders a hyperlink in each of its data cells.
+ * CLinkColumn represents a grid views column that renders a hyperlink in each of its data cells.
  *
  * The {@link label} and {@link url} properties determine how each hyperlink will be rendered.
  * The {@link labelExpression}, {@link urlExpression} properties may be used instead if they are available.

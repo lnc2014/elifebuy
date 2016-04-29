@@ -63,7 +63,7 @@ Yii::import('zii.widgets.grid.CCheckBoxColumn');
  *             'name'=>'authorName',
  *             'value'=>'$data->author->username',
  *         ),
- *         array(            // display a column with "view", "update" and "delete" buttons
+ *         array(            // display a column with "views", "update" and "delete" buttons
  *             'class'=>'CButtonColumn',
  *         ),
  *     ),
@@ -115,7 +115,7 @@ class CGridView extends CBaseListView
 	 * <ul>
 	 *   <li><code>$row</code> the row number (zero-based)</li>
 	 *   <li><code>$data</code> the data model for the row</li>
-	 *   <li><code>$this</code> the grid view object</li>
+	 *   <li><code>$this</code> the grid views object</li>
 	 * </ul>
 	 * The PHP expression will be evaluated using {@link evaluateExpression}.
 	 *
@@ -133,7 +133,7 @@ class CGridView extends CBaseListView
 	 * <ul>
 	 *   <li><code>$row</code> the row number (zero-based)</li>
 	 *   <li><code>$data</code> the data model for the row</li>
-	 *   <li><code>$this</code> the grid view object</li>
+	 *   <li><code>$this</code> the grid views object</li>
 	 * </ul>
 	 * The PHP expression will be evaluated using {@link evaluateExpression}.
 	 *
@@ -149,7 +149,7 @@ class CGridView extends CBaseListView
 	public $showTableOnEmpty=true;
 	/**
 	 * @var mixed the ID of the container whose content may be updated with an AJAX response.
-	 * Defaults to null, meaning the container for this grid view instance.
+	 * Defaults to null, meaning the container for this grid views instance.
 	 * If it is set false, it means sorting and pagination will be performed in normal page requests
 	 * instead of AJAX requests. If the sorting and pagination should trigger the update of multiple
 	 * containers' content in AJAX fashion, these container IDs may be listed here (separated with comma).
@@ -214,19 +214,19 @@ class CGridView extends CBaseListView
 	public $ajaxType;
 	/**
 	 * @var string a javascript function that will be invoked before an AJAX update occurs.
-	 * The function signature is <code>function(id,options)</code> where 'id' refers to the ID of the grid view,
+	 * The function signature is <code>function(id,options)</code> where 'id' refers to the ID of the grid views,
 	 * 'options' the AJAX request options  (see jQuery.ajax api manual).
 	 */
 	public $beforeAjaxUpdate;
 	/**
 	 * @var string a javascript function that will be invoked after a successful AJAX response is received.
-	 * The function signature is <code>function(id, data)</code> where 'id' refers to the ID of the grid view,
+	 * The function signature is <code>function(id, data)</code> where 'id' refers to the ID of the grid views,
 	 * 'data' the received ajax response data.
 	 */
 	public $afterAjaxUpdate;
 	/**
 	 * @var string a javascript function that will be invoked after the row selection is changed.
-	 * The function signature is <code>function(id)</code> where 'id' refers to the ID of the grid view.
+	 * The function signature is <code>function(id)</code> where 'id' refers to the ID of the grid views.
 	 * In this function, you may use <code>$(gridID).yiiGridView('getSelection')</code> to get the key values
 	 * of the currently selected rows (gridID is the DOM selector of the grid).
 	 * @see selectableRows
@@ -241,12 +241,12 @@ class CGridView extends CBaseListView
 	 */
 	public $selectableRows=1;
 	/**
-	 * @var string the base script URL for all grid view resources (eg javascript, CSS file, images).
-	 * Defaults to null, meaning using the integrated grid view resources (which are published as assets).
+	 * @var string the base script URL for all grid views resources (eg javascript, CSS file, images).
+	 * Defaults to null, meaning using the integrated grid views resources (which are published as assets).
 	 */
 	public $baseScriptUrl;
 	/**
-	 * @var string the URL of the CSS file used by this grid view. Defaults to null, meaning using the integrated
+	 * @var string the URL of the CSS file used by this grid views. Defaults to null, meaning using the integrated
 	 * CSS file. If this is set false, you are responsible to explicitly include the necessary CSS file in your page.
 	 */
 	public $cssFile;
@@ -264,10 +264,10 @@ class CGridView extends CBaseListView
 	public $blankDisplay='&nbsp;';
 	/**
 	 * @var string the CSS class name that will be assigned to the widget container element
-	 * when the widget is updating its content via AJAX. Defaults to 'grid-view-loading'.
+	 * when the widget is updating its content via AJAX. Defaults to 'grid-views-loading'.
 	 * @since 1.1.1
 	 */
-	public $loadingCssClass='grid-view-loading';
+	public $loadingCssClass='grid-views-loading';
 	/**
 	 * @var string the jQuery selector of filter input fields.
 	 * The token '{filter}' is recognized and it will be replaced with the grid filters selector.
@@ -291,7 +291,7 @@ class CGridView extends CBaseListView
 	 */
 	public $filterCssClass='filters';
 	/**
-	 * @var string whether the filters should be displayed in the grid view. Valid values include:
+	 * @var string whether the filters should be displayed in the grid views. Valid values include:
 	 * <ul>
 	 *    <li>header: the filters will be displayed on top of each column's header cell.</li>
 	 *    <li>body: the filters will be displayed right below each column's header cell.</li>
@@ -303,7 +303,7 @@ class CGridView extends CBaseListView
 	public $filterPosition='body';
 	/**
 	 * @var CModel the model instance that keeps the user-entered filter data. When this property is set,
-	 * the grid view will enable column-based filtering. Each data column by default will display a text field
+	 * the grid views will enable column-based filtering. Each data column by default will display a text field
 	 * at the top that users can fill in to filter the data.
 	 * Note that in order to show an input field for filtering, a column must have its {@link CDataColumn::name}
 	 * property set or have {@link CDataColumn::filter} as the HTML code for the input field.
@@ -331,7 +331,7 @@ class CGridView extends CBaseListView
 
 
 	/**
-	 * Initializes the grid view.
+	 * Initializes the grid views.
 	 * This method will initialize required property values and instantiate {@link columns} objects.
 	 */
 	public function init()
@@ -344,7 +344,7 @@ class CGridView extends CBaseListView
 			throw new CException(Yii::t('zii','The property filterSelector should be defined.'));
 
 		if(!isset($this->htmlOptions['class']))
-			$this->htmlOptions['class']='grid-view';
+			$this->htmlOptions['class']='grid-views';
 
 		if($this->baseScriptUrl===null)
 			$this->baseScriptUrl=Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('zii.widgets.assets')).'/gridview';
@@ -470,7 +470,7 @@ class CGridView extends CBaseListView
 	}
 
 	/**
-	 * Renders the data items for the grid view.
+	 * Renders the data items for the grid views.
 	 */
 	public function renderItems()
 	{

@@ -163,7 +163,7 @@ class CMssqlCommandBuilder extends CDbCommandBuilder
 	 *   </li>
 	 *   <li>
 	 * In the ORDER BY clause, the column name should NOT be be qualified
-	 * with a table name or view name. Alias the column names or use column index.
+	 * with a table name or views name. Alias the column names or use column index.
 	 *   </li>
 	 *   <li>
 	 * No clauses should follow the ORDER BY clause, e.g. no COMPUTE or FOR clauses.

@@ -1847,7 +1847,7 @@ class CWebApplication extends CApplication
 	public function setViewPath($path)
 	{
 		if(($this->_viewPath=realpath($path))===false || !is_dir($this->_viewPath))
-			throw new CException(Yii::t('yii','The view path "{path}" is not a valid directory.',
+			throw new CException(Yii::t('yii','The views path "{path}" is not a valid directory.',
 				array('{path}'=>$path)));
 	}
 	public function getSystemViewPath()
@@ -1860,7 +1860,7 @@ class CWebApplication extends CApplication
 	public function setSystemViewPath($path)
 	{
 		if(($this->_systemViewPath=realpath($path))===false || !is_dir($this->_systemViewPath))
-			throw new CException(Yii::t('yii','The system view path "{path}" is not a valid directory.',
+			throw new CException(Yii::t('yii','The system views path "{path}" is not a valid directory.',
 				array('{path}'=>$path)));
 	}
 	public function getLayoutPath()
@@ -3401,8 +3401,8 @@ abstract class CBaseController extends CComponent
 		else
 		{
 			$widget=end($this->_widgetStack);
-			throw new CException(Yii::t('yii','{controller} contains improperly nested widget tags in its view "{view}". A {widget} widget does not have an endWidget() call.',
-				array('{controller}'=>get_class($this), '{view}'=>$viewFile, '{widget}'=>get_class($widget))));
+			throw new CException(Yii::t('yii','{controller} contains improperly nested widget tags in its views "{views}". A {widget} widget does not have an endWidget() call.',
+				array('{controller}'=>get_class($this), '{views}'=>$viewFile, '{widget}'=>get_class($widget))));
 		}
 	}
 	public function renderInternal($_viewFile_,$_data_=null,$_return_=false)
@@ -3459,7 +3459,7 @@ abstract class CBaseController extends CComponent
 			return $widget;
 		}
 		else
-			throw new CException(Yii::t('yii','{controller} has an extra endWidget({id}) call in its view.',
+			throw new CException(Yii::t('yii','{controller} has an extra endWidget({id}) call in its views.',
 				array('{controller}'=>get_class($this),'{id}'=>$id)));
 	}
 	public function beginClip($id,$properties=array())
@@ -3489,7 +3489,7 @@ abstract class CBaseController extends CComponent
 	}
 	public function beginContent($view=null,$data=array())
 	{
-		$this->beginWidget('CContentDecorator',array('view'=>$view, 'data'=>$data));
+		$this->beginWidget('CContentDecorator',array('views'=>$view, 'data'=>$data));
 	}
 	public function endContent()
 	{
@@ -3828,8 +3828,8 @@ class CController extends CBaseController
 				echo $output;
 		}
 		else
-			throw new CException(Yii::t('yii','{controller} cannot find the requested view "{view}".',
-				array('{controller}'=>get_class($this), '{view}'=>$view)));
+			throw new CException(Yii::t('yii','{controller} cannot find the requested views "{views}".',
+				array('{controller}'=>get_class($this), '{views}'=>$view)));
 	}
 	public function renderClip($name,$params=array(),$return=false)
 	{
@@ -6050,8 +6050,8 @@ class CWidget extends CBaseController
 		if(($viewFile=$this->getViewFile($view))!==false)
 			return $this->renderFile($viewFile,$data,$return);
 		else
-			throw new CException(Yii::t('yii','{widget} cannot find the view "{view}".',
-				array('{widget}'=>get_class($this), '{view}'=>$view)));
+			throw new CException(Yii::t('yii','{widget} cannot find the views "{views}".',
+				array('{widget}'=>get_class($this), '{views}'=>$view)));
 	}
 }
 class CClientScript extends CApplicationComponent

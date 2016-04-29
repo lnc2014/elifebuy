@@ -23,13 +23,13 @@
  * <ul>
  * <li>title: the tab title.</li>
  * <li>content: the content to be displayed in the tab.</li>
- * <li>view: the name of the view to be displayed in this tab.
- * The view will be rendered using the current controller's
+ * <li>views: the name of the views to be displayed in this tab.
+ * The views will be rendered using the current controller's
  * {@link CController::renderPartial} method.
- * When both 'content' and 'view' are specified, 'content' will take precedence.
+ * When both 'content' and 'views' are specified, 'content' will take precedence.
  * </li>
  * <li>url: a URL that the user browser will be redirected to when clicking on this tab.</li>
- * <li>data: array (name=>value), this will be passed to the view when 'view' is specified.</li>
+ * <li>data: array (name=>value), this will be passed to the views when 'views' is specified.</li>
  * </ul>
  *
  * For example, the {@link tabs} property can be configured as follows,
@@ -38,7 +38,7 @@
  *     'tabs'=>array(
  *         'tab1'=>array(
  *             'title'=>'tab 1 title',
- *             'view'=>'view1',
+ *             'views'=>'view1',
  *             'data'=>array('model'=>$model),
  *         ),
  *         'tab2'=>array(
@@ -76,7 +76,7 @@ class CTabView extends CWidget
 	 */
 	public $activeTab;
 	/**
-	 * @var array the data that will be passed to the partial view rendered by each tab.
+	 * @var array the data that will be passed to the partial views rendered by each tab.
 	 */
 	public $viewData;
 	/**
@@ -90,13 +90,13 @@ class CTabView extends CWidget
 	 * <ul>
 	 * <li>title: the tab title. You need to make sure this is HTML-encoded.</li>
 	 * <li>content: the content to be displayed in the tab.</li>
-	 * <li>view: the name of the view to be displayed in this tab.
-	 * The view will be rendered using the current controller's
+	 * <li>views: the name of the views to be displayed in this tab.
+	 * The views will be rendered using the current controller's
 	 * {@link CController::renderPartial} method.
-	 * When both 'content' and 'view' are specified, 'content' will take precedence.
+	 * When both 'content' and 'views' are specified, 'content' will take precedence.
 	 * </li>
 	 * <li>url: a URL that the user browser will be redirected to when clicking on this tab.</li>
-	 * <li>data: array (name=>value), this will be passed to the view when 'view' is specified.
+	 * <li>data: array (name=>value), this will be passed to the views when 'views' is specified.
 	 * This option is available since version 1.1.1.</li>
 	 * <li>visible: whether this tab is visible. Defaults to true.
 	 * this option is available since version 1.1.11.</li>
@@ -105,7 +105,7 @@ class CTabView extends CWidget
 	 * array(
 	 *     'tab1'=>array(
 	 *           'title'=>'tab 1 title',
-	 *           'view'=>'view1',
+	 *           'views'=>'view1',
 	 *     ),
 	 *     'tab2'=>array(
 	 *           'title'=>'tab 2 title',
@@ -200,10 +200,10 @@ class CTabView extends CWidget
 		foreach($this->tabs as $id=>$tab)
 		{
 			$inactive=$id!==$this->activeTab?' style="display:none"' : '';
-			echo "<div class=\"view\" id=\"{$id}\"{$inactive}>\n";
+			echo "<div class=\"views\" id=\"{$id}\"{$inactive}>\n";
 			if(isset($tab['content']))
 				echo $tab['content'];
-			elseif(isset($tab['view']))
+			elseif(isset($tab['views']))
 			{
 				if(isset($tab['data']))
 				{
@@ -214,7 +214,7 @@ class CTabView extends CWidget
 				}
 				else
 					$data=$this->viewData;
-				$this->getController()->renderPartial($tab['view'], $data);
+				$this->getController()->renderPartial($tab['views'], $data);
 			}
 			echo "</div><!-- {$id} -->\n";
 		}

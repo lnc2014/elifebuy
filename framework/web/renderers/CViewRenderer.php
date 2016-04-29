@@ -9,18 +9,18 @@
  */
 
 /**
- * CViewRenderer is the base class for view renderer classes.
+ * CViewRenderer is the base class for views renderer classes.
  *
- * A view renderer is an application component that renders views written
+ * A views renderer is an application component that renders views written
  * in a customized syntax.
  *
- * Once installing a view renderer as a 'viewRenderer' application component,
- * the normal view rendering process will be intercepted by the renderer.
- * The renderer will first parse the source view file and then render the
- * the resulting view file.
+ * Once installing a views renderer as a 'viewRenderer' application component,
+ * the normal views rendering process will be intercepted by the renderer.
+ * The renderer will first parse the source views file and then render the
+ * the resulting views file.
  *
  * Parsing results are saved as temporary files that may be stored
- * under the application runtime directory or together with the source view file.
+ * under the application runtime directory or together with the source views file.
  *
  * @author Steve Heyns http://customgothic.com/
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -32,7 +32,7 @@ abstract class CViewRenderer extends CApplicationComponent implements IViewRende
 	/**
 	 * @var boolean whether to store the parsing results in the application's
 	 * runtime directory. Defaults to true. If false, the parsing results will
-	 * be saved as files under the same directory as the source view files and the
+	 * be saved as files under the same directory as the source views files and the
 	 * file names will be the source file names appended with letter 'c'.
 	 */
 	public $useRuntimePath=true;
@@ -42,23 +42,23 @@ abstract class CViewRenderer extends CApplicationComponent implements IViewRende
 	 */
 	public $filePermission=0755;
 	/**
-	 * @var string the extension name of the view file. Defaults to '.php'.
+	 * @var string the extension name of the views file. Defaults to '.php'.
 	 */
 	public $fileExtension='.php';
 
 	/**
-	 * Parses the source view file and saves the results as another file.
-	 * @param string $sourceFile the source view file path
-	 * @param string $viewFile the resulting view file path
+	 * Parses the source views file and saves the results as another file.
+	 * @param string $sourceFile the source views file path
+	 * @param string $viewFile the resulting views file path
 	 */
 	abstract protected function generateViewFile($sourceFile,$viewFile);
 
 	/**
-	 * Renders a view file.
+	 * Renders a views file.
 	 * This method is required by {@link IViewRenderer}.
-	 * @param CBaseController $context the controller or widget who is rendering the view file.
-	 * @param string $sourceFile the view file path
-	 * @param mixed $data the data to be passed to the view
+	 * @param CBaseController $context the controller or widget who is rendering the views file.
+	 * @param string $sourceFile the views file path
+	 * @param mixed $data the data to be passed to the views
 	 * @param boolean $return whether the rendering result should be returned
 	 * @return mixed the rendering result, or null if the rendering result is not needed.
 	 */
@@ -76,9 +76,9 @@ abstract class CViewRenderer extends CApplicationComponent implements IViewRende
 	}
 
 	/**
-	 * Generates the resulting view file path.
-	 * @param string $file source view file path
-	 * @return string resulting view file path
+	 * Generates the resulting views file path.
+	 * @param string $file source views file path
+	 * @return string resulting views file path
 	 */
 	protected function getViewFile($file)
 	{

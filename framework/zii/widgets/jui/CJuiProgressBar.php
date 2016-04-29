@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiWidget');
  * CJuiProgressBar encapsulates the {@link http://jqueryui.com/progressbar/ JUI
  * Progressbar} plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiProgressBar',array(
  *     'value'=>75,

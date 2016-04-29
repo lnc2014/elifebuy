@@ -3,7 +3,7 @@
  * This is the template for generating the action script for the form.
  * The following variables are available in this template:
  * - $modelClass: the model class name
- * - $viewName: the name of the view
+ * - $viewName: the name of the views
  */
 ?>
 <?php

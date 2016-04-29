@@ -9,7 +9,7 @@
  */
 
 /**
- * FormCommand generates a form view based on a specified model.
+ * FormCommand generates a form views based on a specified model.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package system.cli.commands.shell
@@ -29,10 +29,10 @@ class FormCommand extends CConsoleCommand
 	{
 		return <<<EOD
 USAGE
-  form <model-class> <view-name> [scenario]
+  form <model-class> <views-name> [scenario]
 
 DESCRIPTION
-  This command generates a form view that can be used to collect inputs
+  This command generates a form views that can be used to collect inputs
   for the specified model.
 
 PARAMETERS
@@ -41,16 +41,16 @@ PARAMETERS
    class file (e.g. 'application.models.ContactForm'). The former can
    be used only if the class can be autoloaded.
 
- * view-name: required, the name of the view to be generated. This should
-   be the path alias of the view script (e.g. 'application.views.site.contact').
+ * views-name: required, the name of the views to be generated. This should
+   be the path alias of the views script (e.g. 'application.views.site.contact').
 
  * scenario: optional, the name of the scenario in which the model is used
    (e.g. 'update', 'login'). This determines which model attributes the
-   generated form view will be used to collect user inputs for. If this
+   generated form views will be used to collect user inputs for. If this
    is not provided, the scenario will be assumed to be '' (empty string).
 
 EXAMPLES
- * Generates the view script for the 'ContactForm' model:
+ * Generates the views script for the 'ContactForm' model:
         form ContactForm application.views.site.contact
 
 EOD;
@@ -65,7 +65,7 @@ EOD;
 	{
 		if(!isset($args[0],$args[1]))
 		{
-			echo "Error: both model class and view name are required.\n";
+			echo "Error: both model class and views name are required.\n";
 			echo $this->getHelp();
 			return 1;
 		}
@@ -98,7 +98,7 @@ EOD;
 		if(!is_file($actionFile))  // fall back to default ones
 			$actionFile=YII_PATH.'/cli/views/shell/form/action.php';
 
-		echo "The following form view has been successfully created:\n";
+		echo "The following form views has been successfully created:\n";
 		echo "\t$viewPath\n\n";
 		echo "You may use the following code in your controller action:\n\n";
 		echo $this->renderFile($actionFile,$params,true);

@@ -11,11 +11,11 @@
 /**
  * CThemeManager manages the themes for the Web application.
  *
- * A theme is a collection of view/layout files and resource files
+ * A theme is a collection of views/layout files and resource files
  * (e.g. css, image, js files). When a theme is active, {@link CController}
- * will look for the specified view/layout under the theme folder first.
- * The corresponding view/layout files will be used if the theme provides them.
- * Otherwise, the default view/layout files will be used.
+ * will look for the specified views/layout under the theme folder first.
+ * The corresponding views/layout files will be used if the theme provides them.
+ * Otherwise, the default views/layout files will be used.
  *
  * By default, each theme is organized as a directory whose name is the theme name.
  * All themes are located under the "WebRootPath/themes" directory.
@@ -24,7 +24,7 @@
  * to be the name of that theme.
  *
  * Since a self-contained theme often contains resource files that are made
- * Web accessible, please make sure the view/layout files are protected from Web access.
+ * Web accessible, please make sure the views/layout files are protected from Web access.
  *
  * @property array $themeNames List of available theme names.
  * @property string $basePath The base path for all themes. Defaults to "WebRootPath/themes".

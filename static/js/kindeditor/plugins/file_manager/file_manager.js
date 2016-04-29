@@ -153,7 +153,7 @@ KE.event.ready(function() {
 		for (var i = 0, len = fileList.length; i < len; i++) {
 			var data = fileList[i];
 			var div = KE.$$('div', document);
-			div.className = 'file-view-area';
+			div.className = 'file-views-area';
 			viewDiv.appendChild(div);
 			var tableObj = KE.util.createTable(document);
 			var table = tableObj.table;

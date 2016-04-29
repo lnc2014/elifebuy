@@ -11,7 +11,7 @@
 /**
  * CBaseListView is the base class for {@link CListView} and {@link CGridView}.
  *
- * CBaseListView implements the common features needed by a view wiget for rendering multiple models.
+ * CBaseListView implements the common features needed by a views wiget for rendering multiple models.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @package zii.widgets
@@ -20,15 +20,15 @@
 abstract class CBaseListView extends CWidget
 {
 	/**
-	 * @var IDataProvider the data provider for the view.
+	 * @var IDataProvider the data provider for the views.
 	 */
 	public $dataProvider;
 	/**
-	 * @var string the tag name for the view container. Defaults to 'div'.
+	 * @var string the tag name for the views container. Defaults to 'div'.
 	 */
 	public $tagName='div';
 	/**
-	 * @var array the HTML options for the view container tag.
+	 * @var array the HTML options for the views container tag.
 	 */
 	public $htmlOptions=array();
 	/**
@@ -42,7 +42,7 @@ abstract class CBaseListView extends CWidget
 	/**
 	 * @var boolean whether to enable pagination. Note that if the {@link IDataProvider::pagination} property
 	 * of {@link dataProvider} is false, this will be treated as false as well. When pagination is enabled,
-	 * a pager will be displayed in the view so that it can trigger pagination of the data display.
+	 * a pager will be displayed in the views so that it can trigger pagination of the data display.
 	 * Defaults to true.
 	 */
 	public $enablePagination=true;
@@ -55,13 +55,13 @@ abstract class CBaseListView extends CWidget
 	 */
 	public $pager=array('class'=>'CLinkPager');
 	/**
-	 * @var string the template to be used to control the layout of various sections in the view.
+	 * @var string the template to be used to control the layout of various sections in the views.
 	 * These tokens are recognized: {summary}, {items} and {pager}. They will be replaced with the
 	 * summary text, the items, and the pager.
 	 */
 	public $template="{summary}\n{items}\n{pager}";
 	/**
-	 * @var string the summary text template for the view. These tokens are recognized and will be replaced
+	 * @var string the summary text template for the views. These tokens are recognized and will be replaced
 	 * with the corresponding values:
 	 * <ul>
 	 *   <li>{start}: the starting row number (1-based) currently being displayed</li>
@@ -100,7 +100,7 @@ abstract class CBaseListView extends CWidget
 	public $loadingCssClass='loading';
 
 	/**
-	 * Initializes the view.
+	 * Initializes the views.
 	 * This method will initialize required property values and instantiate {@link columns} objects.
 	 */
 	public function init()
@@ -122,8 +122,8 @@ abstract class CBaseListView extends CWidget
 	}
 
 	/**
-	 * Renders the view.
-	 * This is the main entry of the whole view rendering.
+	 * Renders the views.
+	 * This is the main entry of the whole views rendering.
 	 * Child classes should mainly override {@link renderContent} method.
 	 */
 	public function run()
@@ -139,7 +139,7 @@ abstract class CBaseListView extends CWidget
 	}
 
 	/**
-	 * Renders the main content of the view.
+	 * Renders the main content of the views.
 	 * The content is divided into sections, such as summary, items, pager.
 	 * Each section is rendered by a method named as "renderXyz", where "Xyz" is the section name.
 	 * The rendering results will replace the corresponding placeholders in {@link template}.
@@ -285,7 +285,7 @@ abstract class CBaseListView extends CWidget
 	}
 
 	/**
-	 * Renders the data items for the view.
+	 * Renders the data items for the views.
 	 * Each item is corresponding to a single data model instance.
 	 * Child classes should override this method to provide the actual item rendering logic.
 	 */

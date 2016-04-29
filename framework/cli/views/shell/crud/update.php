@@ -1,6 +1,6 @@
 <?php
 /**
- * This is the template for generating the update view for crud.
+ * This is the template for generating the update views for crud.
  * The following variables are available in this template:
  * - $ID: the primary key name
  * - $modelClass: the model class name
@@ -13,7 +13,7 @@ $nameColumn=$this->guessNameColumn($columns);
 $label=$this->class2name($modelClass,true);
 echo "\$this->breadcrumbs=array(
 	'$label'=>array('index'),
-	\$model->{$nameColumn}=>array('view','id'=>\$model->{$ID}),
+	\$model->{$nameColumn}=>array('views','id'=>\$model->{$ID}),
 	'Update',
 );\n";
 ?>

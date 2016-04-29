@@ -53,9 +53,9 @@ class CWebLogRoute extends CLogRoute
 	}
 
 	/**
-	 * Renders the view.
-	 * @param string $view the view name (file name without extension). The file is assumed to be located under framework/data/views.
-	 * @param array $data data to be passed to the view
+	 * Renders the views.
+	 * @param string $view the views name (file name without extension). The file is assumed to be located under framework/data/views.
+	 * @param array $data data to be passed to the views
 	 */
 	protected function render($view,$data)
 	{

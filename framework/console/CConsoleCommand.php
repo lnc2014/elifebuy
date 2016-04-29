@@ -465,9 +465,9 @@ abstract class CConsoleCommand extends CComponent
 	}
 
 	/**
-	 * Renders a view file.
-	 * @param string $_viewFile_ view file path
-	 * @param array $_data_ optional data to be extracted as local view variables
+	 * Renders a views file.
+	 * @param string $_viewFile_ views file path
+	 * @param array $_data_ optional data to be extracted as local views variables
 	 * @param boolean $_return_ whether to return the rendering result instead of displaying it
 	 * @return mixed the rendering result if required. Null otherwise.
 	 */

@@ -16,7 +16,7 @@ Yii::import('zii.widgets.jui.CJuiInputWidget');
  * CJuiAutoComplete encapsulates the {@link http://jqueryui.com/autocomplete/ JUI
  * autocomplete} plugin.
  *
- * To use this widget, you may insert the following code in a view:
+ * To use this widget, you may insert the following code in a views:
  * <pre>
  * $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
  *     'name'=>'city',
