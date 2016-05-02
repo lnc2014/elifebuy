@@ -27,8 +27,8 @@ class XFrontBase extends Controller
     {
         parent::init();
         //检测系统是否已经安装
-        if(!is_file(WWWPATH.DS.'data'.DS.'install.lock'))
-            $this->redirect(array('/install'));
+//        if(!is_file(WWWPATH.DS.'data'.DS.'install.lock'))
+//            $this->redirect(array('/install'));
         //系统配置
         $this->_conf = XXcache::system('_config');
         $this->_catalog = Catalog::get(0, XXcache::system('_catalog'));

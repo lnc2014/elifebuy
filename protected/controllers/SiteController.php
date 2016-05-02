@@ -11,7 +11,14 @@ class SiteController extends XFrontBase
      */
     public function actionIndex ()
     {
-        $this->render('index');
+
+        //处理幻灯片
+
+        $banners = Ad::model()->findAll();
+
+        $this->render('index',array(
+            'banners' => $banners
+        ));
     }
 
 
